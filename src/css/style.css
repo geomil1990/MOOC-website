@@ -1,0 +1,55 @@
+/* CSS styling document */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Text color classes */
+.text-red {
+    color: #bb0a01;
+}
+
+.text-light-pink {
+    color: #e4dadf;
+}
+
+.text-light-gray {
+    color: #929fa6;
+}
+
+.text-gray {
+    color: #485864;
+}
+
+.text-black {
+    color: #0c1013;
+}
+
+/* Background color classes */
+.bg-red {
+    background-color: #bb0a01;
+}
+
+.bg-light-pink {
+    background-color: #e4dadf;
+}
+
+.bg-light-gray {
+    background-color: #929fa6;
+}
+
+.bg-gray {
+    background-color: #485864;
+}
+
+.bg-black {
+    background-color: #0c1013;
+}
+
+/* Font styling classes */
+.font-bold {
+    font-weight: bold;
+}
+
+.font-italic {
+    font-style: italic;
+}
