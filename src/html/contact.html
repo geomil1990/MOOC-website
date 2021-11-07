@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOOC</title>
+  </head>
+  <body>
+    <!-- MENU BAR -->
+    <nav>
+      <div>
+        <a href="index.html"> <img src="/src/images/logo.png" alt="MOOC Logo" />MOOC </a>
+
+        <div id="navbarNav">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="subjects.html">Subjects</a>
+            </li>
+
+            <li>
+              <a href="courses.html">Courses</a>
+            </li>
+
+            <li>
+              <a href="about_us.html">About us</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div>
+            <form action="/action_page.php">
+              <!--action_page.php is an example-->
+              <input type="text" placeholder="Username" name="username" />
+              <input type="text" placeholder="Password" name="psw" />
+              <button type="submit">Login</button>
+              <button type="submit">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Form & Map -->
+    <article>
+      <section>
+        <h3>Let's get in touch!</h3>
+        <form id="contact_form" name="contact_form" method="post" action="contact-form-process.php " autocomplete="on"> <!--In some browsers you may need to activate an autocomplete   function for this to work (Look under "Preferences" in the browser's menu).-->
+          <div>
+            <label for="Name">Your name</label>
+            <div>
+              <input type="text" id="Name" name="Name" placeholder="name" required />
+            </div>
+          </div>
+
+          <div>
+            <label for="Email">Your email address</label>
+            <div>
+              <input type="email" id="Email" name="Email" placeholder="email" required />
+            </div>
+          </div>
+
+          <div>
+            <label for="Message">Your message</label>
+            <div>
+              <textarea id="Message" name="Message" rows="16" cols="50' maxlength="3000" placeholder="type your message" required></textarea>
+            </div>
+          </div>
+
+          <div>
+            <button type="submit" value="Submit">Send Message</button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.272776788681!2d23.729929915674003!3d37.99409747972022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a2cc954f82ed%3A0x5795a212958689bb!2zMjjOt8-CIM6fzrrPhM-JzrLPgc6vzr_PhSA3NiwgzpHOuM6uzr3OsSAxMDQgMzQ!5e0!3m2!1sel!2sgr!4v1636198842218!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+    </article>
+
+    <!-- Footer -->
+  </body>
+</html>
