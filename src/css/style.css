@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Text color classes */
@@ -109,6 +110,10 @@ body {
     display: inline-block;
 }
 
+.inline {
+    display: inline;
+}
+
 .left {
     float: left;
 }
@@ -124,6 +129,11 @@ body {
 
 .w-50 {
     width: 50%;
+}
+
+/* Margin classes */
+.my-2 {
+    margin: 2rem 0;
 }
 
 /* Footer styling classes and ids */
@@ -154,7 +164,7 @@ footer {
     height: 1px;
     margin: 3rem 0;
     border: 0;
-    border-top: 1px solid rgba(187, 10, 1, 1);
+    border-top: 1px solid #bb0a01;
     /* background-image: linear-gradient(to right, rgba(187, 10, 1, 0), rgba(187, 10, 1, 0.75), rgba(187, 10, 1, 0)); */
 }
 
@@ -195,4 +205,109 @@ footer {
 .log-btn:hover {
     color: white;
     background-color: #bb0a01;
+}
+
+/* Class for limiting the content away from the edges */
+.container {
+    margin: 2rem 10%;
+}
+
+/* Title styling for subjects and courses pages */
+.content-header {
+    overflow: hidden;
+}
+
+/* Style for the text above the title, indicating the location inside the website */
+.content-header a, .content-header span {
+    margin-right: 5px;
+    color: #485864;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.content-header a:hover {
+    color: #0c1013;
+}
+
+/* The title of the webpage */
+.content-header h1 {
+    color: #0c1013;
+    font-size: 32px;
+}
+
+/* Red horizontal line next to the title */
+.red-line {
+    width: 80%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #bb0a01;
+}
+
+/* Page description */
+.content-header p {
+    color: #485864;
+}
+
+/* Positioning the content-header's title correctly */
+.content-title {
+    margin: -18px 0;
+}
+
+/* Section encompassing a subject and it's courses */
+.subject-section {
+    margin: 3rem 0;
+}
+
+/* Subject's preview image */
+.subject-img {
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+/* Relocate the 2nd image a bit */
+.subject-img-second {
+    margin: -820px 0 0 -200px;
+}
+
+/* Relocate the 4th image a bit */
+.subject-img-fourth {
+    margin: -200px 0 0 -900px;
+}
+
+.subject-section ul {
+    list-style-type: none;
+}
+
+.subject-section li {
+    margin-bottom: 1.5rem;
+}
+
+/* Name of a course in a subject section */
+.subject-section .course-name {
+    display: inline-block;
+    color: #0c1013;
+    font-weight: 900;
+}
+
+/* Info box next to course name */
+.course-info-box {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 4px;
+    color: #485864;
+    border-radius: 10px;
+    background-color: #E4DADF;
+}
+
+/* More info links styling */
+.subject-section .more-info-link {
+    color: #bb0a01;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.subject-section .more-info-link:hover {
+    color: #e4dadf;
 }
