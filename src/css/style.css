@@ -139,6 +139,7 @@ body {
 /* Footer styling classes and ids */
 footer {
     display: flex;
+    margin-top: 8rem;
     padding: 5rem 8rem;
     flex-direction: column;
     background-color: #929FA6;
@@ -310,4 +311,59 @@ footer {
 
 .subject-section .more-info-link:hover {
     color: #e4dadf;
+}
+
+/* Section describing a single course */
+.course-section {
+    margin-top: 4rem;
+}
+
+.course-img {
+    max-width: 20%;
+    height: auto;
+}
+
+.course-section h3 {
+    display: inline;
+    color: #0c1013;
+    font-size: 26px;
+}
+
+.course-section span {
+    margin-left: 8px;
+    color: #485864;
+}
+
+/* Course's covered topics */
+.course-section ol li {
+    color: #0c1013;
+    font-weight: 900;
+}
+
+/* Links to external resources */
+.course-section a:not(.enroll-btn) {
+    display: block;
+    color: #bb0a01;
+}
+
+.course-section a:not(enroll-btn):hover {
+    opacity: 0.8;
+}
+
+/* Button for enrolling for a specific lesson */
+/* Floats right */
+.enroll-btn {
+    float: right;
+    padding: 7px;
+    border: 1px solid #bb0a01;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    background-color: #bb0a01;
+}
+
+/* Above button's hover effect */
+.enroll-btn:hover {
+    color: #bb0a01;
+    background-color: white;
 }
