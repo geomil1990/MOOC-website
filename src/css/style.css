@@ -49,6 +49,11 @@ body {
     background-color: #0c1013;
 }
 
+/* Text center class */
+.text-center {
+    text-align: center;
+}
+
 /* Font styling classes */
 .font-bold {
     font-weight: bold;
@@ -366,4 +371,61 @@ footer {
 .enroll-btn:hover {
     color: #bb0a01;
     background-color: white;
+}
+
+/* Costas page styling classes and ids */
+/* Profile image style */
+#costas-profile-img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* Aueb logo beneath */
+#costas-aueb-logo {
+    margin-left: 10px;
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Images redirecting to external links */
+.costas-external-links {
+    width: 120px;
+    height: auto;
+    margin: 0 2rem;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+}
+
+.costas-external-links:hover {
+    border: 1px solid #bb0a01;
+}
+
+/* # Table containing more infomarion about Costas */
+#costas-info-table {
+    margin: 5rem 0;
+}
+
+/* Center the table */
+#costas-info-table table {
+    width: 50%;
+    margin: 5rem auto;
+    border-collapse: collapse;
+}
+
+/* Rows */
+#costas-info-table tr {
+    font-size: 20px;
+}
+
+/* Make the second column align right */
+#costas-info-table td:nth-child(even) {
+    text-align: right;
+}
+
+/* Columns */
+#costas-info-table td {
+    padding: 1rem;
+    color: #0c1013;
+    font-weight: 400;
 }
