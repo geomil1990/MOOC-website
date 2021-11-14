@@ -151,7 +151,7 @@ nav ul {
 }
 
 #intro {
-  background: url(/src/images/intro_image.png);
+  background: url(../images/intro_image.png);
   width: 1920px;
   height: 1080px;
 }
