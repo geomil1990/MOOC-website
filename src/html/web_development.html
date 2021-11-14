@@ -60,23 +60,25 @@
         </div>
     </nav>
 
-    <main>
-        <div>
+    <main class="container">
+        <div class="content-header">
             <a href="index.html">Home</a><span>&#8250;</span><a href="subjects.html">Subjects</a><span>&#8250;</span><a
                 href="web_development.html">Web Development</a>
-            <h1>Web Development</h1>
-            <hr>
-            <p>
+            <div class="flex-row flex-wrap flex-content-start items-center content-title">
+                <h1>Web Development</h1>
+                <hr class="red-line">
+            </div>
+            <p class="text-gray">
                 Web development is a much sought after skill nowadays. The following course has been specially designed to train new web developers 
                 with limited programming experience. Explore the intricacies of web development by coding and hosting a blogpost website.
             </p>
         </div>
 
-        <section>
-            <img src="../images/placeholder-image.png" alt="">
+        <section class="course-section">
+            <img src="../images/placeholder-image.png" alt="" class="course-img">
             <div>
                 <h3>World Wide Web</h3><span>&middot; 1 hours</span>
-                <p>
+                <p class="text-gray">
                     Familiarize yourself with the protocols that help run the internet as we know it. The current lesson teaches you all you 
                     need to know about the world wide web and various other protocols that work in conjuction.
                 </p>
@@ -87,16 +89,17 @@
                     <li>Client-server model</li>
                 </ol>
                 <a href="https://www.geeksforgeeks.org/client-server-model/">Client-server model in depth</a>
-                <a href="#">Enroll for 10€</a>
+                <a href="#" class="enroll-btn">Enroll for 10€</a>
             </div>
         </section>
 
-        <section>
-            <img src="../images/placeholder-image.png" alt="">
+        <section class="course-section">
+            <img src="../images/placeholder-image.png" alt="" class="course-img">
             <div>
                 <h3>HTML5</h3><span>&middot; 2 hours</span>
-                <p>
-                    
+                <p class="text-gray">
+                    HTML5 is the backbone of every website. Structure content elegantly for the user using HTML tags and attributes. This lesson 
+                    covers the basics and more advanced topics of modern HTML5 design.
                 </p>
                 <ol>
                     <li>Tags and attributes</li>
@@ -107,15 +110,15 @@
                 <a
                     href="http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/introducing-html5-footer-header-nav-article-section-and-aside-elements/">
                     HTML structural elements</a>
-                <a href="#">Enroll for 10€</a>
+                <a href="#" class="enroll-btn">Enroll for 10€</a>
             </div>
         </section>
 
-        <section>
-            <img src="../images/placeholder-image.png" alt="">
+        <section class="course-section">
+            <img src="../images/placeholder-image.png" alt="" class="course-img">
             <div>
                 <h3>CSS3</h3><span>&middot; 2 hours</span>
-                <p>
+                <p class="text-gray">
                     Apart from having rich content, every website oughts to be stylish. This lesson introduces you to CSS, a complementary language 
                     to the aforementioned HTML. Learn how to style your website according to your own liking.
                 </p>
@@ -129,15 +132,15 @@
                 </ol>
                 <a href="https://css-tricks.com/">Cool CSS tricks</a>
                 <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A guide to working with flexboxes</a>
-                <a href="#">Enroll for 20€</a>
+                <a href="#" class="enroll-btn">Enroll for 20€</a>
             </div>
         </section>
 
-        <section>
-            <img src="../images/placeholder-image.png" alt="">
+        <section class="course-section">
+            <img src="../images/placeholder-image.png" alt="" class="course-img">
             <div>
                 <h3>Backend development</h3><span>&middot; 3 hours</span>
-                <p>
+                <p class="text-gray">
                     Every website consists of two important parts; it's frontend and it's backend. The user only interacts with the frond side 
                     of the web app, yet all the data processing and storing happen in the back. Learn how to use a popular Python web framework named Django
                     to serve your website to the world.
@@ -150,15 +153,15 @@
                     <li>Blogspot III</li>
                 </ol>
                 <a href="https://docs.djangoproject.com/en/3.2/intro/tutorial01/">Official Django tutorial</a>
-                <a href="#">Enroll for 20€</a>
+                <a href="#" class="enroll-btn">Enroll for 20€</a>
             </div>
         </section>
 
-        <section>
-            <img src="../images/placeholder-image.png" alt="">
+        <section class="course-section">
+            <img src="../images/placeholder-image.png" alt="" class="course-img">
             <div>
                 <h3>Hosting a website</h3><span>&middot; 2 hours</span>
-                <p>
+                <p class="text-gray">
                     Final lesson for this guided-project course. During this lesson you will learn how to host your website online safely and 
                     with ease. We also finish our blogspot project by making it public.
                 </p>
@@ -170,49 +173,49 @@
                     <li>Blogspot IV</li>
                 </ol>
                 <a href="https://www.cloudflare.com/learning/ssl/what-is-an-ssl-certificate/">More on SSL certificates</a>
-                <a href="#">Enroll for 20€</a>
+                <a href="#" class="enroll-btn">Enroll for 20€</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <div>
-            <div>
-                <img src="../images/logo.png" alt="logo">
-            </div>
-            <div>
-                <div>
+        <div class="flex-row flex-wrap flex-content-between">
+            <img id="company-logo" src="../images/logo.png" alt="logo">
+    
+            <div class="flex-row flex-content-around items-center w-50">
+                <div class="flex-col">
                     <h4><b>Top Courses</b></h4>
-                    <a href="linear_algebra.html">Linear Algebra</a>
-                    <a href="computer_science_introduction.html">Computer Science Introduction</a>
-                    <a href="web_development.html">Web Development</a>
+                    <a href="linear_algebra.html" class="text-black footer-link">Linear Algebra</a>
+                    <a href="computer_science_introduction.html" class="text-black footer-link">Computer Science
+                        Introduction</a>
+                    <a href="web_development.html" class="text-black footer-link">Web Development</a>
                 </div>
-                <div>
+                <div class="flex-col">
                     <h4><b>Company</b></h4>
-                    <a href="about_us.html">About Us</a>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="#">Our Team</a>
+                    <a href="about_us.html" class="text-black footer-link">About Us</a>
+                    <a href="contact.html" class="text-black footer-link">Contact Us</a>
+                    <a href="#" class="text-black footer-link">Our Team</a>
                 </div>
-                <div>
-                    <a href="#">Register</a>
-                    <a href="#">Log out</a>
-                </div>
-            </div>
-    
-            <hr>
-    
-            <div>
-                <span>&copy; Photo, Inc. 2019. We love our users!</span>
-                <div>
-                    <span>Follow us:</span>
-                    <img src="../images/fb_icon.png" alt="facebook">
-                    <img src="../images/twitter_icon.png" alt="twitter">
-                    <img src="../images/insta_icon.png" alt="instagram">
-                    <img src="../images/discord_icon.png" alt="discord">
+                <div class="flex-col">
+                    <a href="#" class="btn register-btn">Register</a>
+                    <a href="#" class="btn log-btn">Log out</a>
                 </div>
             </div>
         </div>
+    
+        <hr id="footer-hr">
+    
+        <div class="flex-row flex-wrap flex-content-between">
+            <span>&copy; Photo, Inc. 2019. We love our users!</span>
+            <div class="flex-row items-center">
+                <span class="text-black">Follow us:</span>
+                <img class="link-img text-black" src="../images/fb_icon.png" alt="facebook">
+                <img class="link-img text-black" src="../images/twitter_icon.png" alt="twitter">
+                <img class="link-img text-black" src="../images/insta_icon.png" alt="instagram">
+                <img class="link-img text-black" src="../images/discord_icon.png" alt="discord">
+            </div>
+        </div>
     </footer>
-</body>
 
+</body>
 </html>
