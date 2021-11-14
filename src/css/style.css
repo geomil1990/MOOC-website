@@ -1,55 +1,190 @@
 /* CSS styling document */
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Text color classes */
 .text-red {
-    color: #bb0a01;
+  color: #bb0a01;
 }
 
 .text-light-pink {
-    color: #e4dadf;
+  color: #e4dadf;
 }
 
 .text-light-gray {
-    color: #929fa6;
+  color: #929fa6;
 }
 
 .text-gray {
-    color: #485864;
+  color: #485864;
 }
 
 .text-black {
-    color: #0c1013;
+  color: #0c1013;
 }
 
 /* Background color classes */
 .bg-red {
-    background-color: #bb0a01;
+  background-color: #bb0a01;
 }
 
 .bg-light-pink {
-    background-color: #e4dadf;
+  background-color: #e4dadf;
 }
 
 .bg-light-gray {
-    background-color: #929fa6;
+  background-color: #929fa6;
 }
 
 .bg-gray {
-    background-color: #485864;
+  background-color: #485864;
 }
 
 .bg-black {
-    background-color: #0c1013;
+  background-color: #0c1013;
 }
 
 /* Font styling classes */
 .font-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .font-italic {
-    font-style: italic;
+  font-style: italic;
+}
+
+/*GEorge*/
+nav li {
+  float: left;
+}
+
+nav li a {
+  color: #bb0a01;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav-position {
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+#menu-position {
+  position: relative;
+  left: 0px;
+  top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.input-size {
+  height: 45px;
+}
+
+#log-in-register {
+  position: absolute;
+  left: 1128px;
+  top: 18px;
+}
+
+.logo {
+  width: 150px;
+  height: 130px;
+  left: 80px;
+  top: 14px;
+}
+
+.white-button {
+  background: #e5e5e5;
+  border-radius: 6px;
+  font-size: 18px;
+  width: 192px;
+  height: 52px;
+  color: #bb0a01;
+}
+.white-button:hover {
+  background-color: #cac9c9;
+}
+.white-button:active {
+  background-color: #e5e5e5;
+  box-shadow: 0 2px rgb(141, 141, 141);
+  transform: translateY(2px);
+}
+
+.red-button {
+  background: #bb0a01;
+  border-radius: 6px;
+  font-size: 18px;
+  width: 192px;
+  height: 52px;
+  color: #e5e5e5;
+}
+.red-button:hover {
+  background-color: #ac0900;
+}
+.red-button:active {
+  background-color: #a70800;
+  box-shadow: 0 2px rgb(141, 141, 141);
+  transform: translateY(2px);
+}
+
+#intro {
+  background: url(/src/images/intro_image.png);
+  width: 1920px;
+  height: 1080px;
+}
+
+#grey-rectalngle {
+  background: #485864;
+  opacity: 0.75;
+  width: 987px;
+  height: 92px;
+}
+
+#restless-learners {
+  color: #e4dadf;
+  size: 56px;
+}
+
+.bg-white {
+  background-color: #ffffff;
+  width: 1920px;
+  height: 1080px;
+}
+
+.size-1920-1080 {
+  width: 1920px;
+  height: 1080px;
+}
+
+.size-1920-600 {
+  width: 1920px;
+  height: 600;
+}
+
+.Our-Partners {
+  width: 1920px;
+  height: 600px;
+}
+
+.university-logos {
+  width: 220px;
+  height: auto;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
 }

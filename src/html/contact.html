@@ -18,42 +18,50 @@
   <body>
     <!-- MENU BAR -->
     <header>
-      <nav>
+      <nav id="position">
         <div>
-          <a href="index.html"> <img src="/src/images/logo.png" alt="MOOC Logo" />MOOC </a>
+          <div>
+            <div id="menu-position">
+              <ul>
+                <li>
+                  <a href="index.html"> <img class="logo" src="/src/images/logo.png" alt="MOOC Logo" /></a>
+                </li>
 
-          <div id="navbarNav">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                  <a href="subjects.html">Subjects</a>
+                </li>
+
+                <li>
+                  <a href="courses.html">Courses</a>
+                </li>
+
+                <li>
+                  <a href="about_us.html">About us</a>
+                </li>
+
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+
             <ul>
               <li>
-                <a href="index.html">Home</a>
-              </li>
-
-              <li>
-                <a href="subjects.html">Subjects</a>
-              </li>
-
-              <li>
-                <a href="courses.html">Courses</a>
-              </li>
-
-              <li>
-                <a href="about_us.html">About us</a>
-              </li>
-
-              <li>
-                <a href="contact.html">Contact</a>
+                <div id="log-in-register">
+                  <form action="/action_page.php">
+                    <!--action_page.php is an example-->
+                    <input class="input-size" type="text" placeholder="Username" name="username" />
+                    <input class="input-size" type="text" placeholder="Password" name="psw" />
+                    <button class="white-button" type="submit">Login</button>
+                    <button class="red-button" type="submit">Register</button>
+                  </form>
+                </div>
               </li>
             </ul>
-
-            <div>
-              <form action="/action_page.php">
-                <!--action_page.php is an example-->
-                <input type="text" placeholder="Username" name="username" />
-                <input type="text" placeholder="Password" name="psw" />
-                <button type="submit">Login</button>
-                <button type="submit">Register</button>
-              </form>
-            </div>
           </div>
         </div>
       </nav>
@@ -62,34 +70,76 @@
     <main>
       <!-- Contact Form & Map -->
       <h2>Let's get in touch!</h2>
-      <article>
+      <article class="bg-light-pink">
         <section>
           <h3>Contact Form</h3>
           <form id="contact_form" name="contact_form" method="post" action="contact-form-process.php " autocomplete="on">
             <!--In some browsers you may need to activate an autocomplete   function for this to work (Look under "Preferences" in the browser's menu).-->
+
+            <!--Firstname-->
             <div>
-              <label for="Name">Your name</label>
-              <div>
-                <input type="text" id="Name" name="Name" placeholder="name" required />
-              </div>
+              <label for="first_name">First Name</label><br />
+              <input type="text" id="first_name" name="first_name" placeholder="George" />
+            </div>
+
+            <!--Lasttname-->
+            <div>
+              <label for="last_name">Last Name</label><br />
+              <input type="text" id="last_name" name="last_name" placeholder="Mylonas" />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email">Email</label><br />
+              <input type="email" name="email" id="email" placeholder="Enter your email" />
+            </div>
+
+            <!-- Textarea -->
+            <div>
+              <label for="message">Message</label><br />
+              <textarea name="message" id="message" cols="80" rows="10" placeholder="Type your message"></textarea>
+            </div>
+
+            <!-- Select Sex-->
+            <div>
+              <label for="sex">Sex</label>
+              <select name="sex" id="sex">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Number -->
+            <div>
+              <label for="age">Age</label><br />
+              <input type="number" name="age" id="age" value="20" />
+            </div>
+
+            <!-- Date -->
+            <div>
+              <label for="birthdate">Birthdate</label><br />
+              <input type="date" name="birthdate" id="birthdate" />
+            </div>
+
+            <!-- Radio -->
+            <div>
+              <label for="membership">Membership</label>
+              <input type="radio" name="membership" value="simple" id="membership" checked /> Simple
+              <input type="radio" name="membership" value="standard" /> Standard
+              <input type="radio" name="membership" value="super" /> Super
+            </div>
+
+            <!-- Checkbox -->
+            <div>
+              <label for="likes">I Like..</label>
+              <input type="checkbox" name="likes" value="bike" id="likes" /> Bike
+              <input type="checkbox" name="likes" value="car" /> Car <input type="checkbox" name="likes" value="boat" /> Boat
             </div>
 
             <div>
-              <label for="Email">Your email address</label>
-              <div>
-                <input type="email" id="Email" name="Email" placeholder="email" required />
-              </div>
-            </div>
-
-            <div>
-              <label for="Message">Your message</label>
-              <div>
-                <textarea id="Message" name="Message" rows="16" cols="50" placeholder="type your message" required></textarea>
-              </div>
-            </div>
-
-            <div>
-              <button type="submit" value="Submit">Send Message</button>
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
             </div>
           </form>
         </section>
