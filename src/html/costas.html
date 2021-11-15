@@ -1,170 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MOOC offers courses on a broad range of subjects. Explore our website and choose the course or project that suits your needs.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MOOC offers courses on a broad range of subjects. Explore our website and choose the course or project that suits your needs."
+    />
     <title>MOOC | Subjects</title>
 
     <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
 
     <!-- Link CSS document -->
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <!-- Navbar -->
-    <nav>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- MENU BAR -->
+    <header>
+      <nav id="position">
         <div>
-            <a href="index.html"> <img src="../images/logo.png" alt="MOOC Logo" />MOOC </a>
-    
-            <div id="navbarNav">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-    
-                    <li>
-                        <a href="subjects.html">Subjects</a>
-                    </li>
-    
-                    <li>
-                        <a href="courses.html">Courses</a>
-                    </li>
-    
-                    <li>
-                        <a href="about_us.html">About us</a>
-                    </li>
-    
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-    
-                <div>
-                    <form action="/action_page.php">
-                        <!--action_page.php is an example-->
-                        <input type="text" placeholder="Username" name="username" />
-                        <input type="text" placeholder="Password" name="psw" />
-                        <button type="submit">Login</button>
-                        <button type="submit">Register</button>
-                    </form>
-                </div>
+          <div>
+            <div id="menu-position">
+              <ul>
+                <li>
+                  <a href="index.html"> <img class="logo" src="../images/logo.png" alt="MOOC Logo" /></a>
+                </li>
+
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                  <a href="subjects.html">Subjects</a>
+                </li>
+
+                <li>
+                  <a href="about_us.html">About us</a>
+                </li>
+
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
             </div>
+
+            <ul>
+              <li>
+                <div id="log-in-register">
+                  <form action="/action_page.php">
+                    <!--action_page.php is an example-->
+                    <input class="input-size" type="text" placeholder="Username" name="username" />
+                    <input class="input-size" type="text" placeholder="Password" name="psw" />
+                    <button class="white-button" type="submit">Login</button>
+                    <button class="red-button" type="submit">Register</button>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
+    </header>
 
     <main class="container">
-        <!-- Flex-col div -->
-        <section class="">
-            <!-- Flex-row div content-evenly -->
-            <div class="">
-                <img src="../images/Kostas.png" alt="profile image" id="costas-profile-img">
-                <!-- Flex-col div content-start items-center -->
-                <div class="">
-                    <h1>Konstantinos Vasilopoulos</h1>
-                    <div class="flex-row items-center">
-                        <h3 class="inline text-red">studies @</h3>
-                        <a href=""><img src="../images/aueb.png" alt="aueb logo" id="costas-aueb-logo"></a>
-                    </div>
-                </div>
+      <!-- Flex-col div -->
+      <section class="">
+        <!-- Flex-row div content-evenly -->
+        <div class="">
+          <img src="../images/Kostas.png" alt="profile image" id="costas-profile-img" />
+          <!-- Flex-col div content-start items-center -->
+          <div class="">
+            <h1>Konstantinos Vasilopoulos</h1>
+            <div class="flex-row items-center">
+              <h3 class="inline text-red">studies @</h3>
+              <a href=""><img src="../images/aueb.png" alt="aueb logo" id="costas-aueb-logo" /></a>
             </div>
-            <p class="text-gray">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis a purus eget auctor. Suspendisse blandit nunc
-                eget velit auctor, id tempus massa pulvinar. Aliquam porttitor at ante placerat aliquam. Maecenas ex orci, sodales
-                ornare dignissim sit amet, laoreet eget nibh. Nullam sodales metus lacus, sed lobortis mi elementum et. Donec vitae nunc
-                pellentesque, ultricies ante ac, lacinia velit. Mauris faucibus ipsum id eros maximus, sit amet convallis lacus
-                scelerisque. Phasellus egestas odio risus, in mollis ligula posuere sit amet. Morbi congue massa dui, non suscipit nibh
-                vulputate eu. Vivamus efficitur tellus et ex bibendum gravida. Phasellus ultricies tortor quis tristique varius.
-                Curabitur dictum fringilla nulla ac molestie. Curabitur tincidunt sapien condimentum dictum rutrum. Cras tincidunt nisl
-                at tempor aliquet.
-            </p>
-        </section>
+          </div>
+        </div>
+        <p class="text-gray">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis a purus eget auctor. Suspendisse blandit nunc
+          eget velit auctor, id tempus massa pulvinar. Aliquam porttitor at ante placerat aliquam. Maecenas ex orci, sodales
+          ornare dignissim sit amet, laoreet eget nibh. Nullam sodales metus lacus, sed lobortis mi elementum et. Donec vitae nunc
+          pellentesque, ultricies ante ac, lacinia velit. Mauris faucibus ipsum id eros maximus, sit amet convallis lacus
+          scelerisque. Phasellus egestas odio risus, in mollis ligula posuere sit amet. Morbi congue massa dui, non suscipit nibh
+          vulputate eu. Vivamus efficitur tellus et ex bibendum gravida. Phasellus ultricies tortor quis tristique varius.
+          Curabitur dictum fringilla nulla ac molestie. Curabitur tincidunt sapien condimentum dictum rutrum. Cras tincidunt nisl
+          at tempor aliquet.
+        </p>
+      </section>
 
-        <!-- Table -->
-        <section id="costas-info-table">
-            <h2 class="inline text-black">More information here</h2>
-            <hr class="inline-block red-line">
+      <!-- Table -->
+      <section id="costas-info-table">
+        <h2 class="inline text-black">More information here</h2>
+        <hr class="inline-block red-line" />
 
-            <table>
-                <tr>
-                    <td>Date of birth</td>
-                    <td>21 years old</td>
-                </tr>
-                <tr>
-                    <td>Address</td>
-                    <td>Patision street, Athens</td>
-                </tr>
-                <tr>
-                    <td>Phone number</td>
-                    <td>+30 690011223</td>
-                </tr>
-                <tr>
-                    <td>Email address</td>
-                    <td>costasvas34@gmail.com</td>
-                </tr>
-                <tr>
-                    <td>Languages</td>
-                    <td>Greek, English & German</td>
-                </tr>
-                <tr>
-                    <td>Programming languages</td>
-                    <td>Python, Java, JavaScript & C++</td>
-                </tr>
-            </table>
+        <table>
+          <tr>
+            <td>Date of birth</td>
+            <td>21 years old</td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td>Patision street, Athens</td>
+          </tr>
+          <tr>
+            <td>Phone number</td>
+            <td>+30 690011223</td>
+          </tr>
+          <tr>
+            <td>Email address</td>
+            <td>costasvas34@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Languages</td>
+            <td>Greek, English & German</td>
+          </tr>
+          <tr>
+            <td>Programming languages</td>
+            <td>Python, Java, JavaScript & C++</td>
+          </tr>
+        </table>
 
-            <!-- Flex-row div -->
-            <div class="flex-row">
-                <a href="https://www.linkedin.com/in/konstantinos-vasilopoulos-b0a144223/"><img src="../images/linkedin.png"
-                        alt="LinkedIn" class="costas-external-links"></a>
-                <a href="https://aueb.gr/"><img src="../images/aueb.png" alt="Athens university of economics and business"
-                        class="costas-external-links"></a>
-                <a href="https://github.com/KonstantinosVasilopoulos"><img src="../images/github.png" alt="Github account"
-                        class="costas-external-links"></a>
-            </div>
-        </section>
+        <!-- Flex-row div -->
+        <div class="flex-row">
+          <a href="https://www.linkedin.com/in/konstantinos-vasilopoulos-b0a144223/"
+            ><img src="../images/linkedin.png" alt="LinkedIn" class="costas-external-links"
+          /></a>
+          <a href="https://aueb.gr/"
+            ><img src="../images/aueb.png" alt="Athens university of economics and business" class="costas-external-links"
+          /></a>
+          <a href="https://github.com/KonstantinosVasilopoulos"
+            ><img src="../images/github.png" alt="Github account" class="costas-external-links"
+          /></a>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="flex-row flex-wrap flex-content-between">
-            <img id="company-logo" src="../images/logo.png" alt="logo">
-    
-            <div class="flex-row flex-content-around items-center w-50">
-                <div class="flex-col">
-                    <h4><b>Top Courses</b></h4>
-                    <a href="linear_algebra.html" class="text-black footer-link">Linear Algebra</a>
-                    <a href="computer_science_introduction.html" class="text-black footer-link">Computer Science
-                        Introduction</a>
-                    <a href="web_development.html" class="text-black footer-link">Web Development</a>
-                </div>
-                <div class="flex-col">
-                    <h4><b>Company</b></h4>
-                    <a href="about_us.html" class="text-black footer-link">About Us</a>
-                    <a href="contact.html" class="text-black footer-link">Contact Us</a>
-                    <a href="#" class="text-black footer-link">Our Team</a>
-                </div>
-                <div class="flex-col">
-                    <a href="#" class="btn register-btn">Register</a>
-                    <a href="#" class="btn log-btn">Log out</a>
-                </div>
-            </div>
+      <div class="flex-row flex-wrap flex-content-between">
+        <img id="company-logo" src="../images/logo.png" alt="logo" />
+
+        <div class="flex-row flex-content-around items-center w-50">
+          <div class="flex-col">
+            <h4><b>Top Courses</b></h4>
+            <a href="linear_algebra.html" class="text-black footer-link">Linear Algebra</a>
+            <a href="computer_science_introduction.html" class="text-black footer-link">Computer Science Introduction</a>
+            <a href="web_development.html" class="text-black footer-link">Web Development</a>
+          </div>
+          <div class="flex-col">
+            <h4><b>Company</b></h4>
+            <a href="about_us.html" class="text-black footer-link">About Us</a>
+            <a href="contact.html" class="text-black footer-link">Contact Us</a>
+            <a href="#" class="text-black footer-link">Our Team</a>
+          </div>
+          <div class="flex-col">
+            <a href="#" class="btn register-btn">Register</a>
+            <a href="#" class="btn log-btn">Log out</a>
+          </div>
         </div>
-    
-        <hr id="footer-hr">
-    
-        <div class="flex-row flex-wrap flex-content-between">
-            <span>&copy; Photo, Inc. 2019. We love our users!</span>
-            <div class="flex-row items-center">
-                <span class="text-black">Follow us:</span>
-                <img class="link-img text-black" src="../images/fb_icon.png" alt="facebook">
-                <img class="link-img text-black" src="../images/twitter_icon.png" alt="twitter">
-                <img class="link-img text-black" src="../images/insta_icon.png" alt="instagram">
-                <img class="link-img text-black" src="../images/discord_icon.png" alt="discord">
-            </div>
+      </div>
+
+      <hr id="footer-hr" />
+
+      <div class="flex-row flex-wrap flex-content-between">
+        <span>&copy; Photo, Inc. 2019. We love our users!</span>
+        <div class="flex-row items-center">
+          <span class="text-black">Follow us:</span>
+          <img class="link-img text-black" src="../images/fb_icon.png" alt="facebook" />
+          <img class="link-img text-black" src="../images/twitter_icon.png" alt="twitter" />
+          <img class="link-img text-black" src="../images/insta_icon.png" alt="instagram" />
+          <img class="link-img text-black" src="../images/discord_icon.png" alt="discord" />
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

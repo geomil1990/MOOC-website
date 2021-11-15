@@ -1,401 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MOOC offers courses on a broad range of subjects. Explore our website and choose the course or project that suits your needs.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MOOC offers courses on a broad range of subjects. Explore our website and choose the course or project that suits your needs."
+    />
     <title>MOOC | Subjects</title>
 
     <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
 
     <!-- Link CSS document -->
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <!-- Navbar -->
-    <nav>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- MENU BAR -->
+    <header>
+      <nav id="position">
         <div>
-            <a href="index.html"> <img src="../images/logo.png" alt="MOOC Logo" />MOOC </a>
-    
-            <div id="navbarNav">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-    
-                    <li>
-                        <a href="subjects.html">Subjects</a>
-                    </li>
-    
-                    <li>
-                        <a href="courses.html">Courses</a>
-                    </li>
-    
-                    <li>
-                        <a href="about_us.html">About us</a>
-                    </li>
-    
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-    
-                <div>
-                    <form action="/action_page.php">
-                        <!--action_page.php is an example-->
-                        <input type="text" placeholder="Username" name="username" />
-                        <input type="text" placeholder="Password" name="psw" />
-                        <button type="submit">Login</button>
-                        <button type="submit">Register</button>
-                    </form>
-                </div>
+          <div>
+            <div id="menu-position">
+              <ul>
+                <li>
+                  <a href="index.html"> <img class="logo" src="../images/logo.png" alt="MOOC Logo" /></a>
+                </li>
+
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                  <a href="subjects.html">Subjects</a>
+                </li>
+
+                <li>
+                  <a href="about_us.html">About us</a>
+                </li>
+
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
             </div>
+
+            <ul>
+              <li>
+                <div id="log-in-register">
+                  <form action="/action_page.php">
+                    <!--action_page.php is an example-->
+                    <input class="input-size" type="text" placeholder="Username" name="username" />
+                    <input class="input-size" type="text" placeholder="Password" name="psw" />
+                    <button class="white-button" type="submit">Login</button>
+                    <button class="red-button" type="submit">Register</button>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
+    </header>
 
     <main class="container">
-        <div class="content-header">
-            <a href="index.html">Home</a><span>&#8250;</span><a href="subjects.html">Subjects</a>
-            <div class="flex-row flex-wrap flex-content-start items-center content-title">
-                <h1>MOOC Subjects</h1>
-                <hr class="red-line">
-            </div>
-            <p>
-                Break through to a world filled with opportunities. Our cour courses cover a broad range of subjects that will surely satisfy your needs. <br>
-                We offer lessons in a variery of subjects, such as Computer Science, Math and many more. Let's take a look!
-            </p>
+      <div class="content-header">
+        <a href="index.html">Home</a><span>&#8250;</span><a href="subjects.html">Subjects</a>
+        <div class="flex-row flex-wrap flex-content-start items-center content-title">
+          <h1>MOOC Subjects</h1>
+          <hr class="red-line" />
+        </div>
+        <p>
+          Break through to a world filled with opportunities. Our cour courses cover a broad range of subjects that will surely
+          satisfy your needs. <br />
+          We offer lessons in a variery of subjects, such as Computer Science, Math and many more. Let's take a look!
+        </p>
+      </div>
+
+      <section class="subject-section">
+        <div>
+          <h2>
+            <b>1. <u class="text-red">Math & Logic</u></b>
+          </h2>
+          <div class="subject-img">
+            <img src="../images/math.png" alt="math and logic background image" />
+          </div>
+          <p class="text-gray my-2">
+            Explore the world of mathematics with tons of puzzles, interactive excersices and games. This course helps you improve
+            your problem solving skills and expand your knowledge of calculus, algebra, trigonometry and probabilities. Browse our
+            set of courses and choose the one that suits your needs.
+          </p>
         </div>
 
-        <section class="subject-section">
+        <ul>
+          <li>
             <div>
-                <h2><b>1. <u class="text-red">Math & Logic</u></b></h2>
-                <div class="subject-img">
-                    <img src="../images/math.png" alt="math and logic background image">
-                </div>
-                <p class="text-gray my-2">
-                    Explore the world of mathematics with tons of puzzles, interactive excersices and games. This course helps you
-                    improve your problem solving skills and expand your knowledge of calculus, algebra, trigonometry and
-                    probabilities. Browse our set of courses and choose the one that suits your needs.
-                </p>
+              <h3 class="course-name">Calculus</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
             </div>
-
-            <ul>
-                <li>
-                    <div>
-                        <h3 class="course-name">Calculus</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">6 hours | 5k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Linear Algebra</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <a href="linear_algebra.html" class="more-info-link">More info &#8250;</a>
-                    </div>
-                    <span class="text-black">12 hours | 3.5k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Discrete Mathematics</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">11 hours | 4.5k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Trigonometry</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">7 hours | 2k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Probabilities</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">5 hours | 7k students enrolled</span>
-                </li>
-            </ul>
-        </section>
-
-        <section class="subject-section">
+            <span class="text-black">6 hours | 5k students enrolled</span>
+          </li>
+          <li>
             <div>
-                <h2><b>2. <u class="text-red">Physical Science</u></b></h2>
-                <div class="subject-img">
-                    <img src="../images/physics.png" alt="physical science background image" class="subject-img-second">
-                </div>
-                <p class="text-gray my-2">
-                    Whether you dream of becoming an engineer, a mechanic or an austronaut, these courses and guided projects
-                    teach you the fundamentals of a multitude of physical sciences. For more advanced students, we include that
-                    give you the opportunity to familiarize yourself with the subjects you already know, as well as, expand on
-                    them.
-                </p>
+              <h3 class="course-name">Linear Algebra</h3>
+              <div class="course-info-box">Course</div>
+              <a href="linear_algebra.html" class="more-info-link">More info &#8250;</a>
             </div>
-        
-            <ul>
-                <li>
-                    <div>
-                        <h3 class="course-name">Mechanics</h3>
-                        <div class="course-info-box">
-                            Project
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">9 hours | 12k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Special Theory of Relativity</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">12 hours | 11.5k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Biology</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">15 hours | 16k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Electromagnetism</h3>
-                        <div class="course-info-box">
-                            Project
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">15 hours | 5k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Astronomy</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">8 hours | 7k students enrolled</span>
-                </li>
-            </ul>
-        </section>
-
-        <section class="subject-section">
+            <span class="text-black">12 hours | 3.5k students enrolled</span>
+          </li>
+          <li>
             <div>
-                <h2><b>3. <u class="text-red">Computer Science</u></b></h2>
-                <div class="subject-img">
-                    <img src="../images/programming.png" alt="computer science background image">
-                </div>
-                <p class="text-gray my-2">
-                    The future is now! Learn state of the art technologies that will certainly land you a job on a prestigious tech company. 
-                    The following courses introduce you to the basic concepts of computers, while you progressively expand your knowledge on the topic.
-                    Feel free to browse our courses and projects!
-                </p>
+              <h3 class="course-name">Discrete Mathematics</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
             </div>
-        
-            <ul>
-                <li>
-                    <div>
-                        <h3 class="course-name">Computer Science Introduction</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <a href="computer_science_introduction.html" class="more-info-link">More info &#8250;</a>
-                    </div>
-                    <span class="text-black">10 hours | 19k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Programming Basics</h3>
-                        <div class="course-info-box">
-                            Project
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">11 hours | 15k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Web Development</h3>
-                        <div class="course-info-box">
-                            Project
-                        </div>
-                        <a href="web_development.html" class="more-info-link">More info &#8250;</a>
-                    </div>
-                    <span class="text-black">10 hours | 16k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Artificial Intelligence</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">9 hours | 9.5k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Cybersecurity</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">7 hours | 6k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Game Development</h3>
-                        <div class="course-info-box">
-                            Project
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">8 hours | 10k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Computer Graphics</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span class="text-black">6 hours | 5.5k students enrolled</span>
-                </li>
-            </ul>
-        </section>
-
-        <section class="subject-section">
+            <span class="text-black">11 hours | 4.5k students enrolled</span>
+          </li>
+          <li>
             <div>
-                <h2><b>4. <u class="text-red">Buisiness & Finance</u></b></h2>
-                <div class="subject-img">
-                    <img src="../images/finance.png" alt="finance background image" class="subject-img-fourth">
-                </div>
-                <p class="text-gray my-2">
-                    Become a successful entrepreneur today!This subject consists of distinguised courses that can shape you into an all out 
-                    businesswoman or businessman. Explore our courses and choose the one that matches your criteria.
-                </p>
+              <h3 class="course-name">Trigonometry</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
             </div>
-        
-            <ul>
-                <li>
-                    <div>
-                        <h3 class="course-name">Introduction to Finance and Accounting</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span>6 hours | 5k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Finance for Startups</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span>5 hours | 5.5k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Financial Markets</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span>6 hours | 2k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Econometrics</h3>
-                        <div class="course-info-box">
-                            Project
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span>4 hours | 1.5k students enrolled</span>
-                </li>
-                <li>
-                    <div>
-                        <h3 class="course-name">Business Analytics</h3>
-                        <div class="course-info-box">
-                            Course
-                        </div>
-                        <span class="text-red">More info &#8250;</span>
-                    </div>
-                    <span>7 hours | 4k students enrolled</span>
-                </li>
-            </ul>
-        </section>
+            <span class="text-black">7 hours | 2k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Probabilities</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span class="text-black">5 hours | 7k students enrolled</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="subject-section">
+        <div>
+          <h2>
+            <b>2. <u class="text-red">Physical Science</u></b>
+          </h2>
+          <div class="subject-img">
+            <img src="../images/physics.png" alt="physical science background image" class="subject-img-second" />
+          </div>
+          <p class="text-gray my-2">
+            Whether you dream of becoming an engineer, a mechanic or an austronaut, these courses and guided projects teach you
+            the fundamentals of a multitude of physical sciences. For more advanced students, we include that give you the
+            opportunity to familiarize yourself with the subjects you already know, as well as, expand on them.
+          </p>
+        </div>
+
+        <ul>
+          <li>
+            <div>
+              <h3 class="course-name">Mechanics</h3>
+              <div class="course-info-box">Project</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span class="text-black">9 hours | 12k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Special Theory of Relativity</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span class="text-black">12 hours | 11.5k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Biology</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span class="text-black">15 hours | 16k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Electromagnetism</h3>
+              <div class="course-info-box">Project</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span class="text-black">15 hours | 5k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Astronomy</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span class="text-black">8 hours | 7k students enrolled</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="subject-section">
+        <div>
+          <h2>
+            <b>3. <u class="text-red">Computer Science</u></b>
+          </h2>
+          <div class="subject-img">
+            <img src="../images/programming.png" alt="computer science background image" />
+          </div>
+          <p class="text-gray my-2">
+            The future is now! Learn state of the art technologies that will certainly land you a job on a prestigious tech
+            company. The following courses introduce you to the basic concepts of computers, while you progressively expand your
+            knowledge on the topic. Feel free to browse our courses and projects!
+          </p>
+        </div>
+
+        <ul>
+          <li>
+            <div>
+              <h3 class="course-name">Computer Science Introduction</h3>
+              <div class="course-info-box">Course</div>
+              <a href="computer_science_introduction.html" class="more-info-link">More info &#8250;</a>
+            </div>
+            <span class="text-black">10 hours | 19k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Programming Basics</h3>
+              <div class="course-info-box">Project</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span class="text-black">11 hours | 15k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Web Development</h3>
+              <div class="course-info-box">Project</div>
+              <a href="web_development.html" class="more-info-link">More info &#8250;</a>
+            </div>
+            <span class="text-black">10 hours | 16k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Artificial Intelligence</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span class="text-black">9 hours | 9.5k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Cybersecurity</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span class="text-black">7 hours | 6k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Game Development</h3>
+              <div class="course-info-box">Project</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span class="text-black">8 hours | 10k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Computer Graphics</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span class="text-black">6 hours | 5.5k students enrolled</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="subject-section">
+        <div>
+          <h2>
+            <b>4. <u class="text-red">Buisiness & Finance</u></b>
+          </h2>
+          <div class="subject-img">
+            <img src="../images/finance.png" alt="finance background image" class="subject-img-fourth" />
+          </div>
+          <p class="text-gray my-2">
+            Become a successful entrepreneur today!This subject consists of distinguised courses that can shape you into an all
+            out businesswoman or businessman. Explore our courses and choose the one that matches your criteria.
+          </p>
+        </div>
+
+        <ul>
+          <li>
+            <div>
+              <h3 class="course-name">Introduction to Finance and Accounting</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span>6 hours | 5k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Finance for Startups</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span>5 hours | 5.5k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Financial Markets</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span>6 hours | 2k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Econometrics</h3>
+              <div class="course-info-box">Project</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span>4 hours | 1.5k students enrolled</span>
+          </li>
+          <li>
+            <div>
+              <h3 class="course-name">Business Analytics</h3>
+              <div class="course-info-box">Course</div>
+              <span class="text-red">More info &#8250;</span>
+            </div>
+            <span>7 hours | 4k students enrolled</span>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>
-        <div class="flex-row flex-wrap flex-content-between">
-            <img id="company-logo" src="../images/logo.png" alt="logo">
-            
-            <div class="flex-row flex-content-around items-center w-50">
-                <div class="flex-col">
-                    <h4><b>Top Courses</b></h4>
-                    <a href="linear_algebra.html" class="text-black footer-link">Linear Algebra</a>
-                    <a href="computer_science_introduction.html" class="text-black footer-link">Computer Science Introduction</a>
-                    <a href="web_development.html" class="text-black footer-link">Web Development</a>
-                </div>
-                <div class="flex-col">
-                    <h4><b>Company</b></h4>
-                    <a href="about_us.html" class="text-black footer-link">About Us</a>
-                    <a href="contact.html" class="text-black footer-link">Contact Us</a>
-                    <a href="#" class="text-black footer-link">Our Team</a>
-                </div>
-                <div class="flex-col">
-                    <a href="#" class="btn register-btn">Register</a>
-                    <a href="#" class="btn log-btn">Log out</a>
-                </div>
-            </div>
-        </div>
-    
-        <hr id="footer-hr">
-    
-        <div class="flex-row flex-wrap flex-content-between">
-            <span>&copy; Photo, Inc. 2019. We love our users!</span>
-            <div class="flex-row items-center">
-                <span class="text-black">Follow us:</span>
-                <img class="link-img text-black" src="../images/fb_icon.png" alt="facebook">
-                <img class="link-img text-black" src="../images/twitter_icon.png" alt="twitter">
-                <img class="link-img text-black" src="../images/insta_icon.png" alt="instagram">
-                <img class="link-img text-black" src="../images/discord_icon.png" alt="discord">
-            </div>
-        </div>
-    </footer>
+      <div class="flex-row flex-wrap flex-content-between">
+        <img id="company-logo" src="../images/logo.png" alt="logo" />
 
-</body>
+        <div class="flex-row flex-content-around items-center w-50">
+          <div class="flex-col">
+            <h4><b>Top Courses</b></h4>
+            <a href="linear_algebra.html" class="text-black footer-link">Linear Algebra</a>
+            <a href="computer_science_introduction.html" class="text-black footer-link">Computer Science Introduction</a>
+            <a href="web_development.html" class="text-black footer-link">Web Development</a>
+          </div>
+          <div class="flex-col">
+            <h4><b>Company</b></h4>
+            <a href="about_us.html" class="text-black footer-link">About Us</a>
+            <a href="contact.html" class="text-black footer-link">Contact Us</a>
+            <a href="#" class="text-black footer-link">Our Team</a>
+          </div>
+          <div class="flex-col">
+            <a href="#" class="btn register-btn">Register</a>
+            <a href="#" class="btn log-btn">Log out</a>
+          </div>
+        </div>
+      </div>
+
+      <hr id="footer-hr" />
+
+      <div class="flex-row flex-wrap flex-content-between">
+        <span>&copy; Photo, Inc. 2019. We love our users!</span>
+        <div class="flex-row items-center">
+          <span class="text-black">Follow us:</span>
+          <img class="link-img text-black" src="../images/fb_icon.png" alt="facebook" />
+          <img class="link-img text-black" src="../images/twitter_icon.png" alt="twitter" />
+          <img class="link-img text-black" src="../images/insta_icon.png" alt="instagram" />
+          <img class="link-img text-black" src="../images/discord_icon.png" alt="discord" />
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
