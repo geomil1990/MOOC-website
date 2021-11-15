@@ -16,46 +16,52 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
+        <!-- MENU BAR -->
+    <header>
+      <nav id="position">
         <div>
-            <a href="index.html"> <img src="../images/logo.png" alt="MOOC Logo" />MOOC </a>
-    
-            <div id="navbarNav">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-    
-                    <li>
-                        <a href="subjects.html">Subjects</a>
-                    </li>
-    
-                    <li>
-                        <a href="courses.html">Courses</a>
-                    </li>
-    
-                    <li>
-                        <a href="about_us.html">About us</a>
-                    </li>
-    
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-    
-                <div>
-                    <form action="/action_page.php">
-                        <!--action_page.php is an example-->
-                        <input type="text" placeholder="Username" name="username" />
-                        <input type="text" placeholder="Password" name="psw" />
-                        <button type="submit">Login</button>
-                        <button type="submit">Register</button>
-                    </form>
-                </div>
+          <div>
+            <div id="menu-position">
+              <ul>
+                <li>
+                  <a href="index.html"> <img class="logo" src="../images/logo.png" alt="MOOC Logo" /></a>
+                </li>
+
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                  <a href="subjects.html">Subjects</a>
+                </li>
+
+                <li>
+                  <a href="about_us.html">About us</a>
+                </li>
+
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
             </div>
+
+            <ul>
+              <li>
+                <div id="log-in-register">
+                  <form action="/action_page.php">
+                    <!--action_page.php is an example-->
+                    <input class="input-size" type="text" placeholder="Username" name="username" />
+                    <input class="input-size" type="text" placeholder="Password" name="psw" />
+                    <button class="white-button" type="submit">Login</button>
+                    <button class="red-button" type="submit">Register</button>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
+    </header>
 
     <main class="container">
         <div class="content-header">
