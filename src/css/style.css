@@ -198,7 +198,6 @@ nav ul {
   transform: translateY(2px);
 }
 
-/*
 .red-button {
   background: #bb0a01;
   border-radius: 6px;
@@ -214,7 +213,7 @@ nav ul {
   background-color: #a70800;
   box-shadow: 0 2px rgb(141, 141, 141);
   transform: translateY(2px);
-}*/
+}
 
 /* Introduction page*/
 #intro {
@@ -312,6 +311,63 @@ nav ul {
   width: 150px;
   height: auto;
   max-height: 90px;
+}
+
+/*About us page*/
+/*Who we are*/
+.flex-who-we-are {
+  display: flex;
+  background: var(--very-light-gray);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.flex-who-we-are > img,
+section {
+  margin: 50px 40px 50px 40px;
+  border-radius: 10px;
+}
+
+/*Our Vision*/
+.flex-our-vision {
+  display: flex;
+  background: var(--light-pink);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.flex-our-vision > img,
+section {
+  margin: 50px 40px 50px 40px;
+  border-radius: 10px;
+}
+
+/*Our team*/
+/*margin for h2 our team*/
+.margin {
+  margin-top: 50px;
+}
+
+/*create a flex box for the two students*/
+.flex-our-team {
+  display: flex;
+  background: var(--white);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.flex-our-vision > img,
+section {
+  margin: 50px 40px 50px 40px;
+  border-radius: 10px;
+}
+
+.students:hover {
+  padding: 15px;
+  border: 1px solid var(--red);
 }
 
 .float-right {
