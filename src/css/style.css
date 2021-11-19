@@ -1,70 +1,80 @@
+/* CSS declare variables */
+:root {
+  --red: #bb0a01;
+  --dark-red: #810600;
+  --light-pink: #e4dadf;
+  --very-light-gray: #c5cfd3;
+  --light-gray: #929fa6;
+  --gray: #485864;
+  --black: #0c1013;
+  --white: #ffffff;
+}
+
 /* CSS styling document */
 body {
   margin: 0;
   padding: 0;
-  background-color: whitesmoke;
+  /*background-color: whitesmoke;*/
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
 
 /* Text color classes */
 .text-red {
-  color: #bb0a01;
+  color: var(--red);
 }
 
 .text-light-pink {
-  color: #e4dadf;
+  color: var(--light-pink);
 }
 
 .text-light-gray {
-  color: #929fa6;
+  color: var(--light-gray);
 }
 
 .text-gray {
-  color: #485864;
+  color: var(--gray);
 }
 
 .text-black {
-  color: #0c1013;
+  color: var(--black);
 }
 
 .text-white {
-  color: #ffffff;
+  color: var(--white);
 }
 
 /* Background color classes */
 .bg-red {
-  background-color: #bb0a01;
+  background-color: var(--red);
 }
 
 .bg-dark-red {
-  background-color: #810600;
+  background-color: var(--dark-red);
 }
 
 .bg-light-pink {
-  background-color: #e4dadf;
+  background-color: var(--light-pink);
 }
 
 .bg-light-gray {
-  background-color: #929fa6;
+  background-color: var(--light-gray);
 }
 
 .bg-very-light-gray {
-  background-color: #c5cfd3;
+  background-color: var(--very-light-gray);
 }
 
 .bg-gray {
-  background-color: #485864;
+  background-color: var(--gray);
 }
 
 .bg-black {
-  background-color: #0c1013;
+  background-color: var(--black);
 }
 
 .bg-white {
-  background-color: #ffffff;
-  width: 1920px;
-  height: 1080px;
+  background-color: var(--white);
 }
 /* Text center class */
 .text-center {
@@ -85,16 +95,17 @@ body {
 }
 
 /*Navigation bar*/
-nav li {
+
+/* Navigation colour links */
+nav li a {
+  color: var(--red);
+  text-decoration: none;
+}
+/*nav li {
   float: left;
 }
 
-nav li a {
-  color: #bb0a01;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+
 
 #nav-position {
   position: relative;
@@ -109,39 +120,74 @@ nav li a {
 }
 
 nav ul {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #ffffff;
+}*/
+
+/*Navigation list*/
+.flex-nav-list {
+  display: flex;
+  background: var(--white);
+  list-style-type: none;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.input-size {
+/*margin between navigaton bar items*/
+.nav-item {
+  margin-right: 2rem;
+}
+
+/*Only the logo*/
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+/*MOOC website h2*/
+.red-text h2 {
+  float: right;
+}
+
+/*.input-size {
   height: 45px;
 }
 
-#log-in-register {
+/*#log-in-register {
   position: absolute;
   left: 1128px;
   top: 18px;
-}
+}*/
 
 .logo {
-  width: 150px;
-  height: 130px;
-  left: 80px;
-  top: 14px;
+  width: 60px;
+  height: auto;
 }
 
 /* button preferences*/
+.btn-preferences {
+  border-radius: 6px;
+  border-color: var(--red);
+  font-size: 18px;
+  width: auto;
+  height: 30px;
+}
+
 .white-button {
   background: #ffffff;
-  border-radius: 6px;
+  border-radius: 16px;
   border-color: #bb0a01;
-  font-size: 18px;
+  font-size: 25px;
   width: 192px;
   height: 52px;
   color: #bb0a01;
+  border-width: 5px;
 }
 .white-button:hover {
   background-color: #ebebeb;
@@ -152,6 +198,7 @@ nav ul {
   transform: translateY(2px);
 }
 
+/*
 .red-button {
   background: #bb0a01;
   border-radius: 6px;
@@ -167,13 +214,28 @@ nav ul {
   background-color: #a70800;
   box-shadow: 0 2px rgb(141, 141, 141);
   transform: translateY(2px);
-}
+}*/
 
 /* Introduction page*/
 #intro {
-  background: url(../images/intro_image.png);
-  width: 1920px;
-  height: 1080px;
+  background-image: url(../images/intro_image.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 80vh;
+  width: auto;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: realtive;
+}
+
+.overlay h2 {
+  color: #e4dadf;
+  font-size: 48px;
 }
 
 #grey-rectalngle {
@@ -183,9 +245,40 @@ nav ul {
   height: 92px;
 }
 
-#restless-learners {
-  color: #e4dadf;
-  size: 56px;
+/* MOOC INFO*/
+.grid-mooc-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  justify-content: space-between;
+  margin: 2rem 10%;
+}
+
+.grid-mooc-info div:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /*background-color: rgba(38, 128, 86, 0.8);*/
+}
+
+.grid-mooc-info div:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
+  /*background-color: rgba(38, 118, 128, 0.8);*/
+}
+
+.grid-mooc-info div:nth-child(3) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
+  /*background-color: rgba(62, 14, 94, 0.8);*/
 }
 
 /* Just for visually help we will use flex-box & grid-layout*/
@@ -364,7 +457,6 @@ footer {
 
 /* Login and logout button */
 .log-btn {
-  margin-top: 20px;
   color: #bb0a01;
   background-color: white;
 }
