@@ -222,6 +222,9 @@ nav ul {
   background-position: 50% 50%;
   height: 80vh;
   width: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 2px;
 }
 
 .overlay {
@@ -229,20 +232,18 @@ nav ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: realtive;
+  position: relative;
 }
 
+/*Resless Learners*/
 .overlay h2 {
-  color: #e4dadf;
+  color: var(--light-pink);
   font-size: 48px;
+  background-color: #525252cb;
+  border-radius: 20px;
+  padding: 5px;
 }
 
-#grey-rectalngle {
-  background: #485864;
-  opacity: 0.75;
-  width: 987px;
-  height: 92px;
-}
 
 /* MOOC INFO*/
 .grid-mooc-info {
