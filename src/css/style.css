@@ -412,6 +412,15 @@ section {
   /*background-color: rgba(62, 14, 94, 0.8);*/
 }
 
+/*Contact*/
+.flex-contact {
+  display: flex;
+  background: var(--light-pink);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
 .float-right {
   float: right;
 }
