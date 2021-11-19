@@ -190,7 +190,7 @@ nav ul {
   border-width: 5px;
 }
 .white-button:hover {
-  background-color: #ebebeb;
+  background-color: var(--light-pink);
 }
 .white-button:active {
   background-color: #e5e5e5;
@@ -292,14 +292,26 @@ nav ul {
   height: 600;
 }
 
-.Our-Partners {
-  width: 1920px;
-  height: 600px;
+/*Our partners*/
+
+#knowledge {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 70px;
+}
+
+.grid-our-partners {
+  display: flex;
+  background: var(--light-pink);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
 }
 
 .university-logos {
-  width: 220px;
+  width: 150px;
   height: auto;
+  max-height: 90px;
 }
 
 .float-right {
