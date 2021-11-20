@@ -7,6 +7,18 @@ body {
   overflow-x: hidden;
 }
 
+/* Inter Google font */
+@font-face {
+  font-family: inter;
+  src: url(../fonts/Inter-Light.ttf);
+}
+
+/* Class for adding inter font */
+/* Used in position subtitle above main document title */
+.font-inter {
+  font-family: inter;
+}
+
 /* Text color classes */
 .text-red {
   color: #bb0a01;
