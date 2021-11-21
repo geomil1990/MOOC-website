@@ -19,6 +19,18 @@ body {
   overflow-x: hidden;
 }
 
+/* Inter Google font */
+@font-face {
+  font-family: inter;
+  src: url(../fonts/Inter-Light.ttf);
+}
+
+/* Class for adding inter font */
+/* Used in position subtitle above main document title */
+.font-inter {
+  font-family: inter;
+}
+
 /* Text color classes */
 .text-red {
   color: var(--red);
@@ -622,13 +634,14 @@ footer {
 
 /* The title of the webpage */
 .content-header h1 {
+  margin-right: 1rem;
   color: #0c1013;
   font-size: 32px;
 }
 
 /* Red horizontal line next to the title */
 .red-line {
-  width: 80%;
+  flex-grow: 1;
   height: 1px;
   border: 0;
   border-top: 1px solid #bb0a01;
@@ -705,6 +718,9 @@ footer {
 
 /* Section describing a single course */
 .course-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-top: 4rem;
 }
 
