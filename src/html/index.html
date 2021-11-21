@@ -17,44 +17,34 @@
   <body>
     <!-- MENU BAR -->
     <header>
-      <nav id="position">
+      <nav>
         <div>
           <div>
-            <div id="menu-position">
-              <ul>
-                <li>
-                  <a href="index.html"> <img class="logo" src="../images/logo.png" alt="MOOC Logo" /></a>
-                </li>
+            <ul class="flex-nav-list">
+              <li class="nav-item">
+                <a href="index.html"> <img class="logo" src="../images/logo.png" alt="MOOC Logo" /></a>
+                <h2 class="text-red" style="float: right">MOOC Website</h2>
+              </li>
 
-                <li>
-                  <a class="menu-link" href="index.html">Home</a>
-                </li>
+              <li class="nav-item">
+                <a class="menu-link" href="index.html">Home</a>
+              </li>
 
-                <li>
-                  <a class="menu-link" href="subjects.html">Subjects</a>
-                </li>
+              <li class="nav-item">
+                <a class="menu-link" href="subjects.html">Subjects</a>
+              </li>
 
-                <li>
-                  <a class="menu-link" href="about_us.html">About us</a>
-                </li>
+              <li class="nav-item">
+                <a class="menu-link" href="about_us.html">About us</a>
+              </li>
 
-                <li>
-                  <a class="menu-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
+              <li class="nav-item">
+                <a class="menu-link" href="contact.html">Contact</a>
+              </li>
 
-            <ul>
-              <li>
-                <div id="log-in-register">
-                  <form action="/action_page.php">
-                    <!--action_page.php is an example-->
-                    <input class="input-size" type="text" placeholder="Username" name="username" />
-                    <input class="input-size" type="text" placeholder="Password" name="psw" />
-                    <button class="white-button" type="submit">Login</button>
-                    <button class="red-button" type="submit">Register</button>
-                  </form>
-                </div>
+              <li class="nav-item">
+                <button class="log-btn btn-preferences" type="submit">Login</button>
+                <button class="register-btn btn-preferences" type="submit">Register</button>
               </li>
             </ul>
           </div>
@@ -64,22 +54,22 @@
 
     <main>
       <!-- Into Image & sign up -->
-      <section id="intro">
-        <div>
-          <svg id="grey-rectalngle"></svg>
-          <h2 id="restless-learners">Restless learners change the world</h2>
-        </div>
+      <section id="intro" class="overlay">
+        <!--<svg id="grey-rectalngle"></svg>-->
+        <h2>Restless learners change the world</h2>
         <button class="white-button" onclick="document.location='subjects.html'">Join Today</button>
       </section>
 
       <!-- MOOC INFO -->
-      <article class="bg-white">
-        <h2 class="text-red">Enabling transformation</h2>
-        <h3>
-          Your (Name of MOOC) learning experience is grounded in cutting edge cognitive science. With more than two dozen distinct
-          learning features to help you achieve your goals, our approach follows three key principles:
-        </h3>
-        <section>
+      <article class="bg-white grid-mooc-info">
+        <div>
+          <h2 class="text-red">Enabling transformations</h2>
+          <h3>
+            Your (Name of MOOC) learning experience is grounded in cutting edge cognitive science. With more than two dozen
+            distinct learning features to help you achieve your goals, our approach follows three key principles:
+          </h3>
+        </div>
+        <div>
           <h4 class="text-red">Experience</h4>
           <p>
             Learn new knowledge and skills in a variety of ways, from engaging video lectures and dynamic graphics to data
@@ -95,24 +85,29 @@
             Learning on edX transforms how you think and what you can do, and translates directly into the real world—immediately
             apply your new capabilities in the context of your job.
           </p>
-          <img class="float-right" src="../images/brain.png" alt="brain image" />
-        </section>
+        </div>
+        <div>
+          <img src="../images/brain.png" alt="brain image" />
+        </div>
       </article>
 
       <!-- School & Partners -->
-      <article class="Our-Partners bg-light-pink">
-        <h2 class="text-red">knowledge Without Limits</h2>
-
+      <div class="bg-light-pink">
         <section>
-          <h3>Learn from more than 30 Greek Universities</h3>
-          <img class="university-logos" src="../images/aueb_logo.png" alt="aueb logo" />
-          <img class="university-logos" src="../images/uoa_logo.png" alt="uoa logo" />
-          <img class="university-logos" src="../images/tuc_logo.jpg" alt="tuc logo" />
-          <img class="university-logos" src="../images/ntua_logo.png" alt="ntua logo" />
-          <img class="university-logos" src="../images/auth_logo.png" alt="auth logo" />
-          <img class="university-logos" src="../images/up_logo.png" alt="up logo" />
+          <div id="knowledge">
+            <h2 class="text-red">knowledge Without Limits</h2>
+            <h3>Learn from more than 30 Greek Universities</h3>
+          </div>
+          <div class="grid-our-partners">
+            <img class="university-logos" src="../images/aueb_logo.png" alt="aueb logo" />
+            <img class="university-logos" src="../images/tuc_logo.png" alt="tuc logo" />
+            <img class="university-logos" src="../images/ntua_logo.png" alt="ntua logo" />
+            <img class="university-logos" src="../images/auth_logo.png" alt="auth logo" />
+            <img class="university-logos" src="../images/up_logo.png" alt="up logo" />
+            <img class="university-logos" src="../images/uoa_logo.png" alt="uoa logo" />
+          </div>
         </section>
-      </article>
+      </div>
     </main>
 
     <!-- Footer -->

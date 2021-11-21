@@ -18,44 +18,34 @@
 <body>
         <!-- MENU BAR -->
     <header>
-      <nav id="position">
+      <nav>
         <div>
           <div>
-            <div id="menu-position">
-              <ul>
-                <li>
-                  <a href="index.html"> <img class="logo" src="../images/logo.png" alt="MOOC Logo" /></a>
-                </li>
+            <ul class="flex-nav-list">
+              <li class="nav-item">
+                <a href="index.html"> <img class="logo" src="../images/logo.png" alt="MOOC Logo" /></a>
+                <h2 class="text-red" style="float: right">MOOC Website</h2>
+              </li>
 
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
+              <li class="nav-item">
+                <a class="menu-link" href="index.html">Home</a>
+              </li>
 
-                <li>
-                  <a href="subjects.html">Subjects</a>
-                </li>
+              <li class="nav-item">
+                <a class="menu-link" href="subjects.html">Subjects</a>
+              </li>
 
-                <li>
-                  <a href="about_us.html">About us</a>
-                </li>
+              <li class="nav-item">
+                <a class="menu-link" href="about_us.html">About us</a>
+              </li>
 
-                <li>
-                  <a href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
+              <li class="nav-item">
+                <a class="menu-link" href="contact.html">Contact</a>
+              </li>
 
-            <ul>
-              <li>
-                <div id="log-in-register">
-                  <form action="/action_page.php">
-                    <!--action_page.php is an example-->
-                    <input class="input-size" type="text" placeholder="Username" name="username" />
-                    <input class="input-size" type="text" placeholder="Password" name="psw" />
-                    <button class="white-button" type="submit">Login</button>
-                    <button class="red-button" type="submit">Register</button>
-                  </form>
-                </div>
+              <li class="nav-item">
+                <button class="log-btn btn-preferences" type="submit">Login</button>
+                <button class="register-btn btn-preferences" type="submit">Register</button>
               </li>
             </ul>
           </div>
