@@ -163,9 +163,6 @@ nav ul {
 }
 
 /*MOOC website h2*/
-.red-text h2 {
-  float: right;
-}
 
 /*.input-size {
   height: 45px;
@@ -227,6 +224,68 @@ nav ul {
   transform: translateY(2px);
 }
 
+/* Responsive */
+@media (max-width: 940px) {
+  .flex-nav-list {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*margin between navigaton bar items*/
+  .nav-item {
+    margin: 1rem;
+  }
+
+  /*Only the logo*/
+  .nav-item:first-child {
+    margin-left: auto;
+  }
+
+  /*Resless Learners*/
+  .overlay h2 {
+    color: var(--light-pink);
+    font-size: 48px;
+    background-color: #525252cb;
+    border-radius: 20px;
+    padding: 5px;
+    max-width: 400px;
+  }
+
+  .grid-mooc-info {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .grid-mooc-info div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgba(38, 128, 86, 0.8);
+  }
+
+  .grid-mooc-info div:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: rgba(38, 118, 128, 0.8);
+  }
+
+  .grid-mooc-info div:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: rgba(62, 14, 94, 0.8);
+  }
+}
+/* End of responsive*/
+
 /* Introduction page*/
 #intro {
   background-image: url(../images/intro_image.png);
@@ -260,10 +319,8 @@ nav ul {
 /* MOOC INFO*/
 .grid-mooc-info {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  justify-content: space-between;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
   margin: 2rem 10%;
 }
 
@@ -280,8 +337,7 @@ nav ul {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  align-self: center;
-  /*background-color: rgba(38, 118, 128, 0.8);*/
+  /* background-color: rgba(38, 118, 128, 0.8);*/
 }
 
 .grid-mooc-info div:nth-child(3) {
@@ -289,8 +345,7 @@ nav ul {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  align-self: center;
-  /*background-color: rgba(62, 14, 94, 0.8);*/
+  /* background-color: rgba(62, 14, 94, 0.8);*/
 }
 
 /* Just for visually help we will use flex-box & grid-layout*/
