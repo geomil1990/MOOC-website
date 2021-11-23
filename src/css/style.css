@@ -593,6 +593,7 @@ footer {
 
 /* Register button */
 .register-btn {
+  margin-bottom: 1rem;
   color: white;
   background-color: #bb0a01;
 }
@@ -833,4 +834,53 @@ footer {
   padding: 1rem;
   color: #0c1013;
   font-weight: 400;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+
+  footer {
+    padding: 5rem;
+  }
+
+  #company-logo {
+    height: 8rem;
+  }
+
+  .sm-flex-col {
+    flex-direction: column;
+  }
+
+  .sm-text-center {
+    text-align: center;
+  }
+
+  .sm-flex-content-start {
+    justify-content: start;
+  }
+
+  .sm-flex-content-center {
+    justify-content: center;
+  }
+
+  .sm-flex-content-between {
+    justify-content: space-between;
+  }
+
+  .sm-items-center {
+    align-items: center;
+  }
+
+  .sm-w-100 {
+    width: 100%;
+  }
+
+  #footer-hr {
+    margin: 40px auto;
+  }
+
+  .sm-m-y-1 {
+    margin: 1rem 0;
+  }
 }
