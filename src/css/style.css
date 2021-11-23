@@ -255,7 +255,7 @@ nav ul {
     max-width: 400px;
   }
 }
-/* End of responsive*/
+/* End of responsive nav bar*/
 
 /* Introduction page*/
 #intro {
@@ -288,62 +288,52 @@ nav ul {
 }
 
 /* MOOC INFO*/
-.grid-mooc-info {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
+
+.flex-mooc-info {
+  display: inline-flex;
+  flex-flow: row wrap;
+  height: 800px;
+  list-style-type: none;
+  background: var(--white);
   margin-left: 2em;
   margin-right: 2em;
-  grid-template-areas:
-    "enabling-transformations enabling-transformations"
-    "experience brain";
-  background-color: #ac0b33cb;
+  /*justify-content: flex-end;
+  align-items: center;*/
 }
 
 #enabling-transformations {
-  grid-area: enabling-transformations;
-  /* background-color: #a1ac0bcb;*/
+  display: inline-block;
+  flex: 0 0 100%; /* Let it fill the entire space horizontally */
+  height: auto;
+  background-color: #fbff26cb;
 }
-
 #experience {
-  grid-area: experience;
-  /*background-color: #10ac0bcb;*/
+  flex: 2;
+  height: calc(100% - 100px);
+  background-color: #10ac0bcb;
 }
 
 #brain {
-  grid-area: brain;
-  /*background-color: #0b0eaccb;*/
+  flex: 3;
+  height: calc(100% - 100px);
+  
+  background-color: #0b0eaccb;
 }
 
 @media only screen and (max-width: 950px) {
-  .grid-mooc-info {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "enabling-transformations"
-      "experience"
-      "brain";
-    background-color: #92be17cb;
+  .flex-mooc-info {
+    margin-bottom: 10px;
   }
-  #enabling-transformations {
-    grid-area: enabling-transformations;
-    /* background-color: #a1ac0bcb;*/
-  }
-
-  #enabling-transformations > h2,
-  h3 {
-    word-wrap: break-word;
-  }
-
   #experience {
-    grid-area: experience;
-    /*background-color: #10ac0bcb;*/
+    flex: 2;
+    height: 400px;
+    background-color: #10ac0bcb;
   }
 
   #brain {
-    grid-area: brain;
-    /*background-color: #0b0eaccb;*/
+    flex: 3;
+    height: calc(100% - 100px);
+    background-color: #0b0eaccb;x;
   }
 }
 
