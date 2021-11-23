@@ -254,35 +254,6 @@ nav ul {
     padding: 5px;
     max-width: 400px;
   }
-
-  .grid-mooc-info {
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(3, auto);
-  }
-
-  .grid-mooc-info div:nth-child(1) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: rgba(38, 128, 86, 0.8);
-  }
-
-  .grid-mooc-info div:nth-child(2) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: rgba(38, 118, 128, 0.8);
-  }
-
-  .grid-mooc-info div:nth-child(3) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-color: rgba(62, 14, 94, 0.8);
-  }
 }
 /* End of responsive*/
 
@@ -321,31 +292,59 @@ nav ul {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
-  margin: 2rem 10%;
+  margin-left: 2em;
+  margin-right: 2em;
+  grid-template-areas:
+    "enabling-transformations enabling-transformations"
+    "experience brain";
+  background-color: #ac0b33cb;
 }
 
-.grid-mooc-info div:nth-child(1) {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  /*background-color: rgba(38, 128, 86, 0.8);*/
+#enabling-transformations {
+  grid-area: enabling-transformations;
+  /* background-color: #a1ac0bcb;*/
 }
 
-.grid-mooc-info div:nth-child(2) {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  /* background-color: rgba(38, 118, 128, 0.8);*/
+#experience {
+  grid-area: experience;
+  /*background-color: #10ac0bcb;*/
 }
 
-.grid-mooc-info div:nth-child(3) {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  /* background-color: rgba(62, 14, 94, 0.8);*/
+#brain {
+  grid-area: brain;
+  /*background-color: #0b0eaccb;*/
+}
+
+@media only screen and (max-width: 950px) {
+  .grid-mooc-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "enabling-transformations"
+      "experience"
+      "brain";
+    background-color: #92be17cb;
+  }
+  #enabling-transformations {
+    grid-area: enabling-transformations;
+    /* background-color: #a1ac0bcb;*/
+  }
+
+  #enabling-transformations > h2,
+  h3 {
+    word-wrap: break-word;
+  }
+
+  #experience {
+    grid-area: experience;
+    /*background-color: #10ac0bcb;*/
+  }
+
+  #brain {
+    grid-area: brain;
+    /*background-color: #0b0eaccb;*/
+  }
 }
 
 /* Just for visually help we will use flex-box & grid-layout*/
