@@ -540,6 +540,21 @@ footer {
   background-color: #929fa6;
 }
 
+/* Grid for styling footer's top row */
+#footer-top-row {
+  display: grid;
+  grid-template-columns: [company-logo]5fr [top-courses]1fr [company]1fr [buttons]1fr;
+  grid-template-rows: 1fr;
+  column-gap: 1rem;
+}
+
+
+/* Style for the footer's login and register buttons */
+.footer-grid-buttons {
+  justify-self: start;
+  align-self: center;
+}
+
 /* Class for styling the footer's links */
 .link-img {
   width: 60px;
@@ -838,14 +853,21 @@ footer {
 
 
 /* Mobile */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 756px) {
 
   footer {
     padding: 5rem;
   }
 
-  #company-logo {
-    height: 8rem;
+  #footer-top-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 1rem;
+    justify-items: center;
+  }
+
+  .footer-grid-buttons {
+    justify-self: center;
   }
 
   .sm-flex-col {
