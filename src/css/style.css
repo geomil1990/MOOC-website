@@ -929,4 +929,48 @@ footer {
   #costas-info-table tr {
     font-size: 16px;
   }
+
+  /* Change the orientation of the course-section */
+  .course-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Let the image span the entire length of the screen */
+  .course-img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .course-section h3 {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Realign the 'Enroll' button */
+  .enroll-btn {
+    float: left;
+    margin-top: 1rem;
+  }
+
+  /* Hide the red line */
+  .red-line {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 1056px) {
+  /* Same as in mobile */
+  .course-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Same as in mobile */
+  .course-img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
 }
