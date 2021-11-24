@@ -500,6 +500,10 @@ section {
   align-items: center;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 /* Positioning classes */
 .inline-block {
   display: inline-block;
@@ -529,6 +533,11 @@ section {
 /* Margin classes */
 .my-2 {
   margin: 2rem 0;
+}
+
+/* Padding classes */
+.py-2 {
+  padding: 2rem 0;
 }
 
 /* Footer styling classes and ids */
@@ -894,15 +903,30 @@ footer {
     align-items: center;
   }
 
+  /* Width 100% for small screens */
   .sm-w-100 {
     width: 100%;
+  }
+  /* Margin class for small devices */
+  .sm-my-2 {
+    margin: 2rem 0;
   }
 
   #footer-hr {
     margin: 40px auto;
   }
 
+
   .sm-m-y-1 {
     margin: 1rem 0;
+  }
+
+  /* Shrink the table at costas about page */
+  #costas-info-table table {
+    width: 100%;
+  }
+
+  #costas-info-table tr {
+    font-size: 16px;
   }
 }
