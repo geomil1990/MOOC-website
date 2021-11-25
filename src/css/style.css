@@ -142,6 +142,8 @@ nav ul {
   background-color: #ffffff;
 }*/
 
+/*main*/
+
 /*Navigation list*/
 .flex-nav-list {
   display: flex;
@@ -292,7 +294,7 @@ nav ul {
 .flex-mooc-info {
   display: inline-flex;
   flex-flow: row wrap;
-  height: 800px;
+  max-height: 100%;
   list-style-type: none;
   background: var(--white);
   margin-left: 2em;
@@ -309,14 +311,11 @@ nav ul {
 }
 #experience {
   flex: 2;
-  height: calc(100% - 100px);
   background-color: #10ac0bcb;
 }
 
 #brain {
   flex: 3;
-  height: calc(100% - 100px);
-  
   background-color: #0b0eaccb;
 }
 
@@ -325,15 +324,15 @@ nav ul {
     margin-bottom: 10px;
   }
   #experience {
-    flex: 2;
-    height: 400px;
     background-color: #10ac0bcb;
   }
 
   #brain {
-    flex: 3;
-    height: calc(100% - 100px);
-    background-color: #0b0eaccb;x;
+    background-color: #0b0eaccb;
+  }
+
+  #brain > img {
+    width: 500px;
   }
 }
 
