@@ -336,12 +336,6 @@ nav ul {
   padding-bottom: 70px;
 }
 
-.flex-who-we-are > img,
-section {
-  margin: 50px 40px 50px 40px;
-  border-radius: 10px;
-}
-
 /*Our Vision*/
 .flex-our-vision {
   display: flex;
@@ -351,9 +345,20 @@ section {
   padding-bottom: 70px;
 }
 
-.flex-our-vision > img,
-section {
+.about-us-info-text {
+  max-width: 45%;
   margin: 50px 40px 50px 40px;
+  border-radius: 10px;
+}
+
+/* About us images */
+.about-us-img {
+  max-width: 100%;
+  margin: 2rem;
+}
+
+.about-us-img > img, .about-us-img > source {
+  max-width: 100%;
   border-radius: 10px;
 }
 
@@ -366,19 +371,15 @@ section {
 /*create a flex box for the two students*/
 .flex-our-team {
   display: flex;
+  flex-wrap: wrap;
   background: var(--white);
   justify-content: center;
   align-items: center;
   padding-bottom: 70px;
 }
 
-.flex-our-vision > img,
-section {
-  margin: 50px 40px 50px 40px;
-  border-radius: 10px;
-}
-
 .students {
+  max-width: 45%;
   padding: 15px;
   border: 1px solid var(--white);
 }
@@ -860,6 +861,40 @@ footer {
   font-weight: 400;
 }
 
+/* Tablet */
+@media screen and (max-width: 1056px) {
+  /* Same as in mobile */
+  .course-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Same as in mobile */
+  .course-img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* About page styling */
+  .about-us-info-text {
+    max-width: 45%;
+  }
+
+  .about-us-img {
+    max-width: 45%;
+    margin: 1.5rem 1rem;
+  }
+
+  .about-us-img > img, .about-us-img > source {
+    max-width:90%;
+  }
+
+  /* Enlarge the students' links */
+  .students {
+    max-width: 95%;
+  }
+}
+
 
 /* Mobile */
 @media screen and (max-width: 756px) {
@@ -958,19 +993,22 @@ footer {
   .red-line {
     display: none;
   }
-}
 
-/* Tablet */
-@media screen and (max-width: 1056px) {
-  /* Same as in mobile */
-  .course-section {
-    display: flex;
-    flex-direction: column;
+  /* About page styling */
+  .flex-who-we-are, .flex-our-vision {
+    flex-wrap: wrap;
   }
-  
-  /* Same as in mobile */
-  .course-img {
+
+  .about-us-info-text {
     max-width: 100%;
-    margin-bottom: 1rem;
+  }
+
+  .about-us-img {
+    max-width: 100%;
+    margin: 1.5rem 1rem;
+  }
+
+  .about-us-img > img, .about-us-img > source {
+    max-width: 100%;
   }
 }
