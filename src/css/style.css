@@ -144,7 +144,7 @@ nav ul {
 
 /*main*/
 
-/*Navigation list*/
+/*------------------Navigation Bar----------------*/
 .flex-nav-list {
   display: flex;
   background: var(--white);
@@ -200,9 +200,11 @@ nav ul {
   color: #bb0a01;
   border-width: 5px;
 }
+
 .white-button:hover {
   background-color: var(--light-pink);
 }
+
 .white-button:active {
   background-color: #e5e5e5;
   box-shadow: 0 2px #485864;
@@ -217,9 +219,11 @@ nav ul {
   height: 52px;
   color: #ffffff;
 }
+
 .red-button:hover {
   background-color: #ec0c00;
 }
+
 .red-button:active {
   background-color: #a70800;
   box-shadow: 0 2px rgb(141, 141, 141);
@@ -246,20 +250,10 @@ nav ul {
   .nav-item:first-child {
     margin-left: auto;
   }
-
-  /*Resless Learners*/
-  .overlay h2 {
-    color: var(--light-pink);
-    font-size: 48px;
-    background-color: #525252cb;
-    border-radius: 20px;
-    padding: 5px;
-    max-width: 400px;
-  }
 }
 /* End of responsive nav bar*/
 
-/* Introduction page*/
+/* ------------------Introduction page-----------------*/
 #intro {
   background-image: url(../images/intro_image.png);
   background-size: cover;
@@ -289,13 +283,24 @@ nav ul {
   padding: 5px;
 }
 
-/* MOOC INFO*/
+/*Resonsive*/
+@media (max-width: 940px) {
+  /*Resless Learners*/
+  .overlay h2 {
+    color: var(--light-pink);
+    font-size: 48px;
+    background-color: #525252cb;
+    border-radius: 20px;
+    padding: 5px;
+    max-width: 400px;
+  }
+}
 
+/*-------------------- MOOC INFO-------------------*/
 .flex-mooc-info {
-  display: inline-flex;
+  display: flex;
   flex-flow: row wrap;
   max-height: 100%;
-  list-style-type: none;
   background: var(--white);
   margin-left: 2em;
   margin-right: 2em;
@@ -324,15 +329,16 @@ nav ul {
     margin-bottom: 10px;
   }
   #experience {
+    flex: 2;
     background-color: #10ac0bcb;
   }
 
   #brain {
+    flex: 2;
     background-color: #0b0eaccb;
   }
 
   #brain > img {
-    width: 500px;
   }
 }
 
@@ -347,7 +353,7 @@ nav ul {
   height: 600;
 }
 
-/*Our partners*/
+/*------------------Our partners-----------------*/
 
 #knowledge {
   text-align: center;
