@@ -284,7 +284,7 @@ nav ul {
 }
 
 /*Resonsive*/
-@media (max-width: 940px) {
+@media (max-width: 950px) {
   /*Resless Learners*/
   .overlay h2 {
     color: var(--light-pink);
@@ -309,51 +309,59 @@ nav ul {
 }
 
 #enabling-transformations {
-  display: inline-block;
-  flex: 0 0 100%; /* Let it fill the entire space horizontally */
+  max-width: 100%;
   height: auto;
-  background-color: #fbff26cb;
+  /*background-color: #b9bd4ecb;*/
 }
+
 #experience {
-  flex: 2;
-  background-color: #10ac0bcb;
+  max-width: 30%;
+  /* background-color: #10ac0bcb; */
 }
 
 #brain {
-  flex: 3;
-  background-color: #0b0eaccb;
+  margin-left: 10%;
+  max-width: 60%;
+  /* background-color: #0b0eaccb; */
 }
 
-@media only screen and (max-width: 950px) {
+@media screen and (max-width: 1500px) {
+  #brain > img {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #brain > img {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #brain > img {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 950px) {
   .flex-mooc-info {
     margin-bottom: 10px;
+    flex-direction: column;
   }
+
   #experience {
-    flex: 2;
-    background-color: #10ac0bcb;
+    max-width: 100%;
   }
 
   #brain {
-    flex: 2;
-    background-color: #0b0eaccb;
+    max-width: 100%;
   }
-
-  #brain > img {
-  }
-}
-
-/* Just for visually help we will use flex-box & grid-layout*/
-.size-1920-1080 {
-  width: 1920px;
-  height: 1080px;
-}
-
-.size-1920-600 {
-  width: 1920px;
-  height: 600;
 }
 
 /*------------------Our partners-----------------*/
+.partners {
+  margin: 0px;
+}
 
 #knowledge {
   text-align: center;
@@ -361,12 +369,13 @@ nav ul {
   margin-bottom: 70px;
 }
 
-.grid-our-partners {
+.flex-our-partners {
   display: flex;
   background: var(--light-pink);
   justify-content: center;
   align-items: center;
   padding-bottom: 70px;
+  flex-flow: row wrap;
 }
 
 .university-logos {
@@ -478,7 +487,7 @@ section {
   /*background-color: rgba(62, 14, 94, 0.8);*/
 }
 
-/*Contact*/
+/*-------------------Contact------------------*/
 .flex-contact {
   display: flex;
   background: var(--light-pink);
@@ -486,16 +495,32 @@ section {
   align-items: center;
   padding-bottom: 70px;
   margin-top: 0px;
+  flex-flow: row wrap;
 }
 
-.margin-bottom0 {
-  margin-bottom: 0px;
+.flex-contact section:nth-child(1) {
+  margin-right: 10%;
+}
+
+iframe {
+  width: 800px;
+  height: 650px;
+  border: 0;
 }
 
 .font-contact {
   margin-top: 0px;
   padding: 15px;
   font-size: 42px;
+  margin-bottom: 0px;
+}
+
+/* Responsive */
+@media screen and (max-width: 950px) {
+  iframe {
+    width: 450px;
+    height: 350px;
+  }
 }
 
 .float-right {
