@@ -10,11 +10,15 @@
   --white: #ffffff;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* CSS styling document */
 body {
   margin: 0;
   padding: 0;
-  /*background-color: whitesmoke;*/
+  background-color: whitesmoke;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
@@ -113,44 +117,20 @@ nav li a {
   color: var(--red);
   text-decoration: none;
 }
-/*nav li {
-  float: left;
-}
 
-
-
-#nav-position {
-  position: relative;
-  left: 0px;
-  top: 0px;
-}
-
-#menu-position {
-  position: relative;
-  left: 0px;
-  top: 10px;
-}
-
-nav ul {
-  display: grid;
-  grid-template-columns: repeat(7, auto);
-
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #ffffff;
-}*/
-
-/*main*/
+/*---------------------main-----------------------*/
 
 /*------------------Navigation Bar----------------*/
+/* flex box for navigation bar */
 .flex-nav-list {
   display: flex;
   background: var(--white);
   list-style-type: none;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 15px;
 }
 
 /*margin between navigaton bar items*/
@@ -164,18 +144,7 @@ nav ul {
   margin-left: 1rem;
 }
 
-/*MOOC website h2*/
-
-/*.input-size {
-  height: 45px;
-}
-
-/*#log-in-register {
-  position: absolute;
-  left: 1128px;
-  top: 18px;
-}*/
-
+/* logo size */
 .logo {
   width: 60px;
   height: auto;
@@ -230,7 +199,7 @@ nav ul {
   transform: translateY(2px);
 }
 
-/* Responsive */
+/* Responsive for navigation bar */
 @media (max-width: 940px) {
   .flex-nav-list {
     display: flex;
@@ -251,7 +220,6 @@ nav ul {
     margin-left: auto;
   }
 }
-/* End of responsive nav bar*/
 
 /* ------------------Introduction page-----------------*/
 #intro {
@@ -266,12 +234,14 @@ nav ul {
   border-radius: 2px;
 }
 
+/* a small flex box for indroduction page */
 .overlay {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
+  margin-bottom: 0px;
 }
 
 /*Resless Learners*/
@@ -283,7 +253,7 @@ nav ul {
   padding: 5px;
 }
 
-/*Resonsive*/
+/*Responsive*/
 @media (max-width: 950px) {
   /*Resless Learners*/
   .overlay h2 {
@@ -297,6 +267,7 @@ nav ul {
 }
 
 /*-------------------- MOOC INFO-------------------*/
+/* a flex box with 3 elements */
 .flex-mooc-info {
   display: flex;
   flex-flow: row wrap;
@@ -304,8 +275,10 @@ nav ul {
   background: var(--white);
   margin-left: 2em;
   margin-right: 2em;
+  margin: 0px 2em 0px 2em;
   /*justify-content: flex-end;
   align-items: center;*/
+  background-color: whitesmoke;
 }
 
 #enabling-transformations {
@@ -325,12 +298,14 @@ nav ul {
   /* background-color: #0b0eaccb; */
 }
 
+/* Responsive */
 @media screen and (max-width: 1500px) {
   #brain > img {
     max-width: 700px;
   }
 }
 
+/* smaller images */
 @media screen and (max-width: 1200px) {
   #brain > img {
     max-width: 600px;
@@ -343,6 +318,7 @@ nav ul {
   }
 }
 
+/* One column */
 @media screen and (max-width: 950px) {
   .flex-mooc-info {
     margin-bottom: 10px;
@@ -445,49 +421,132 @@ section {
   border: 1px solid var(--red);
 }
 
-/*George page*/
+/*-----------------------George page-----------------------*/
 
+/* Create a grid layout with 3 elements and inside the two of them we create a flex box */
 .grid-cv {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-columns: repeat(2, auto);
-  justify-content: space-between;
+  grid-template-rows: repeat(2, auto);
   margin: 2rem 10%;
+  grid-template-areas:
+    "george george"
+    "left right";
 }
 
-.grid-cv section:nth-child(1) {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+/* the first element of the flexbox which is on top */
+#George-Info {
   text-align: center;
   margin-bottom: 5px;
-  /*background-color: rgba(38, 128, 86, 0.8);*/
+  background-color: var(--dark-red);
+  grid-area: george;
 }
 
-.grid-cv section:nth-child(2) {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+/* the two other elements that contain flexboxes */
+#left-side {
   text-align: center;
   margin-top: 0px;
   margin-right: 5px;
-  /*background-color: rgba(38, 118, 128, 0.8);*/
+  padding: 2em;
+  background-color: var(--very-light-gray);
+  display: flex;
+  flex-direction: column;
+  grid-area: left;
 }
 
-.grid-cv section:nth-child(3) {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+#right-side {
   text-align: center;
   margin-top: 0px;
   margin-left: 0px;
-  /*background-color: rgba(62, 14, 94, 0.8);*/
+  background-color: var(--light-pink);
+  display: flex;
+  flex-direction: column;
+  grid-area: right;
+}
+
+/*Responsive*/
+/* a change in thr template area where everything will be in a column from now on */
+@media screen and (max-width: 1150px) {
+  .grid-cv {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    margin: 2rem 5%;
+    grid-template-areas:
+      "george"
+      "left"
+      "right";
+  }
+
+  #George-Info {
+    width: 80vh;
+    justify-self: center;
+  }
+
+  #left-side {
+    justify-self: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 40px;
+    background-color: var(--very-light-gray);
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+  }
+
+  #right-side {
+    justify-self: center;
+    margin-top: 5px;
+    margin-left: 40px;
+    background-color: var(--light-pink);
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+  }
+}
+
+/* breakpoint for smartphones */
+@media screen and (max-width: 950px) {
+  .grid-cv {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    margin: 2rem 5%;
+    grid-template-areas:
+      "george"
+      "left"
+      "right";
+  }
+
+  #George-Info {
+    width: 70vh;
+    justify-self: center;
+  }
+
+  #left-side {
+    justify-self: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 40px;
+    background-color: var(--very-light-gray);
+    display: flex;
+    flex-direction: column;
+    width: 70vh;
+  }
+
+  #right-side {
+    justify-self: center;
+    margin-top: 5px;
+    margin-left: 40px;
+    background-color: var(--light-pink);
+    display: flex;
+    flex-direction: column;
+    width: 70vh;
+  }
 }
 
 /*-------------------Contact------------------*/
+/* flex box with two elements,the contact form and a map */
 .flex-contact {
   display: flex;
   background: var(--light-pink);
@@ -498,16 +557,19 @@ section {
   flex-flow: row wrap;
 }
 
+/* Contact Form */
 .flex-contact section:nth-child(1) {
   margin-right: 10%;
 }
 
+/* Map */
 iframe {
   width: 800px;
   height: 650px;
   border: 0;
 }
 
+/* Font for the contact form */
 .font-contact {
   margin-top: 0px;
   padding: 15px;
