@@ -370,12 +370,6 @@ nav li a {
   padding-bottom: 70px;
 }
 
-.flex-who-we-are > img,
-section {
-  margin: 50px 40px 50px 40px;
-  border-radius: 10px;
-}
-
 /*Our Vision*/
 .flex-our-vision {
   display: flex;
@@ -385,9 +379,20 @@ section {
   padding-bottom: 70px;
 }
 
-.flex-our-vision > img,
-section {
+.about-us-info-text {
+  max-width: 45%;
   margin: 50px 40px 50px 40px;
+  border-radius: 10px;
+}
+
+/* About us images */
+.about-us-img {
+  max-width: 100%;
+  margin: 2rem;
+}
+
+.about-us-img > img, .about-us-img > source {
+  max-width: 100%;
   border-radius: 10px;
 }
 
@@ -400,19 +405,15 @@ section {
 /*create a flex box for the two students*/
 .flex-our-team {
   display: flex;
+  flex-wrap: wrap;
   background: var(--white);
   justify-content: center;
   align-items: center;
   padding-bottom: 70px;
 }
 
-.flex-our-vision > img,
-section {
-  margin: 50px 40px 50px 40px;
-  border-radius: 10px;
-}
-
 .students {
+  max-width: 45%;
   padding: 15px;
   border: 1px solid var(--white);
 }
@@ -636,6 +637,10 @@ iframe {
   align-items: center;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 /* Positioning classes */
 .inline-block {
   display: inline-block;
@@ -667,6 +672,11 @@ iframe {
   margin: 2rem 0;
 }
 
+/* Padding classes */
+.py-2 {
+  padding: 2rem 0;
+}
+
 /* Footer styling classes and ids */
 footer {
   display: flex;
@@ -674,6 +684,21 @@ footer {
   padding: 5rem 8rem;
   flex-direction: column;
   background-color: #929fa6;
+}
+
+/* Grid for styling footer's top row */
+#footer-top-row {
+  display: grid;
+  grid-template-columns: [company-logo]5fr [top-courses]1fr [company]1fr [buttons]1fr;
+  grid-template-rows: 1fr;
+  column-gap: 1rem;
+}
+
+
+/* Style for the footer's login and register buttons */
+.footer-grid-buttons {
+  justify-self: start;
+  align-self: center;
 }
 
 /* Class for styling the footer's links */
@@ -729,6 +754,7 @@ footer {
 
 /* Register button */
 .register-btn {
+  margin-bottom: 1rem;
   color: white;
   background-color: #bb0a01;
 }
@@ -969,4 +995,156 @@ footer {
   padding: 1rem;
   color: #0c1013;
   font-weight: 400;
+}
+
+/* Tablet */
+@media screen and (max-width: 1056px) {
+  /* Same as in mobile */
+  .course-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Same as in mobile */
+  .course-img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* About page styling */
+  .about-us-info-text {
+    max-width: 45%;
+  }
+
+  .about-us-img {
+    max-width: 45%;
+    margin: 1.5rem 1rem;
+  }
+
+  .about-us-img > img, .about-us-img > source {
+    max-width:90%;
+  }
+
+  /* Enlarge the students' links */
+  .students {
+    max-width: 95%;
+  }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 756px) {
+
+  footer {
+    padding: 5rem;
+  }
+
+  #footer-top-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 1rem;
+    justify-items: center;
+  }
+
+  .footer-grid-buttons {
+    justify-self: center;
+  }
+
+  .sm-flex-col {
+    flex-direction: column;
+  }
+
+  .sm-text-center {
+    text-align: center;
+  }
+
+  .sm-flex-content-start {
+    justify-content: start;
+  }
+
+  .sm-flex-content-center {
+    justify-content: center;
+  }
+
+  .sm-flex-content-between {
+    justify-content: space-between;
+  }
+
+  .sm-items-center {
+    align-items: center;
+  }
+
+  /* Width 100% for small screens */
+  .sm-w-100 {
+    width: 100%;
+  }
+  /* Margin class for small devices */
+  .sm-my-2 {
+    margin: 2rem 0;
+  }
+
+  #footer-hr {
+    margin: 40px auto;
+  }
+
+
+  .sm-m-y-1 {
+    margin: 1rem 0;
+  }
+
+  /* Shrink the table at costas about page */
+  #costas-info-table table {
+    width: 100%;
+  }
+
+  #costas-info-table tr {
+    font-size: 16px;
+  }
+
+  /* Change the orientation of the course-section */
+  .course-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Let the image span the entire length of the screen */
+  .course-img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .course-section h3 {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Realign the 'Enroll' button */
+  .enroll-btn {
+    float: left;
+    margin-top: 1rem;
+  }
+
+  /* Hide the red line */
+  .red-line {
+    display: none;
+  }
+
+  /* About page styling */
+  .flex-who-we-are, .flex-our-vision {
+    flex-wrap: wrap;
+  }
+
+  .about-us-info-text {
+    max-width: 100%;
+  }
+
+  .about-us-img {
+    max-width: 100%;
+    margin: 1.5rem 1rem;
+  }
+
+  .about-us-img > img, .about-us-img > source {
+    max-width: 100%;
+  }
 }

@@ -55,21 +55,24 @@
     <main>
       <!-- Who we are -->
       <article class="flex-who-we-are">
-        <img src="../images/coolaboration.jpg" alt="coolaboration image" />
+        <picture class="about-us-img">
+          <source media="(max-width: 756px)" srcset="../images/collaboration_small.jpg" />
+          <img src="../images/coolaboration.jpg" alt="coolaboration image" />
+        </picture>
 
-        <section>
+        <section class="about-us-info-text">
           <h2 class="text-red">Who we are</h2>
           <p>
             Hi, there! We are George and Kostas, the team that brings to you the unique e-learning experience that connects
             passionate learners and universities from all over the world.We come from diverse backgrounds, but we share one common
-            belief: “Education is the most powerful weapon which you can use to change the world! “
+            belief: “Education is the most powerful weapon which you can use to change the world!“
           </p>
         </section>
       </article>
 
       <!-- Our Vision -->
       <article class="flex-our-vision">
-        <section>
+        <section class="about-us-info-text">
           <h2 class="text-red">Our Vision</h2>
           <p>
             Every individual has the potential to create change, whether in their life, their community, or the world. The
@@ -80,7 +83,10 @@
           </p>
         </section>
 
-        <img src="../images/education.jpg" alt="education image" />
+        <picture class="about-us-img">
+          <source media="(max-width: 756px)" srcset="../images/education_small.jpg" />
+          <img src="../images/education.jpg" alt="education image" />
+        </picture>
       </article>
 
       <!-- Our Team -->
@@ -112,34 +118,32 @@
 
     <!-- Footer -->
     <footer>
-      <div class="flex-row flex-wrap flex-content-between">
+      <div id="footer-top-row">
         <img id="company-logo" src="../images/logo.png" alt="logo" />
-
-        <div class="flex-row flex-content-around items-center w-50">
-          <div class="flex-col">
-            <h4><b>Top Courses</b></h4>
-            <a href="linear_algebra.html" class="text-black footer-link">Linear Algebra</a>
-            <a href="computer_science_introduction.html" class="text-black footer-link">Computer Science Introduction</a>
-            <a href="web_development.html" class="text-black footer-link">Web Development</a>
-          </div>
-          <div class="flex-col">
-            <h4><b>Company</b></h4>
-            <a href="about_us.html" class="text-black footer-link">About Us</a>
-            <a href="contact.html" class="text-black footer-link">Contact Us</a>
-            <a href="#" class="text-black footer-link">Our Team</a>
-          </div>
-          <div class="flex-col">
-            <a href="#" class="btn register-btn">Register</a>
-            <a href="#" class="btn log-btn">Log out</a>
-          </div>
+    
+        <div class="flex-col sm-items-center">
+          <h4><b>Top Courses</b></h4>
+          <a href="linear_algebra.html" class="text-black footer-link">Linear Algebra</a>
+          <a href="computer_science_introduction.html" class="text-black footer-link">Computer Science Introduction</a>
+          <a href="web_development.html" class="text-black footer-link">Web Development</a>
+        </div>
+        <div class="flex-col sm-items-center">
+          <h4><b>Company</b></h4>
+          <a href="about_us.html" class="text-black footer-link">About Us</a>
+          <a href="contact.html" class="text-black footer-link">Contact Us</a>
+          <a href="#" class="text-black footer-link">Our Team</a>
+        </div>
+        <div class="flex-col sm-items-center footer-grid-buttons">
+          <a href="#" class="btn register-btn">Register</a>
+          <a href="#" class="btn log-btn">Log out</a>
         </div>
       </div>
-
+    
       <hr id="footer-hr" />
-
-      <div class="flex-row flex-wrap flex-content-between">
+    
+      <div class="flex-row flex-wrap flex-content-between sm-m-y-1 sm-flex-content-center">
         <span>&copy; Photo, Inc. 2019. We love our users!</span>
-        <div class="flex-row items-center">
+        <div class="flex-row items-center sm-m-y-1">
           <span class="text-black">Follow us:</span>
           <img class="link-img text-black" src="../images/fb_icon.png" alt="facebook" />
           <img class="link-img text-black" src="../images/twitter_icon.png" alt="twitter" />
