@@ -391,7 +391,8 @@ nav li a {
   margin: 2rem;
 }
 
-.about-us-img > img, .about-us-img > source {
+.about-us-img > img,
+.about-us-img > source {
   max-width: 100%;
   border-radius: 10px;
 }
@@ -694,7 +695,6 @@ footer {
   column-gap: 1rem;
 }
 
-
 /* Style for the footer's login and register buttons */
 .footer-grid-buttons {
   justify-self: start;
@@ -753,6 +753,17 @@ footer {
 }
 
 /* Register button */
+.register-btn-nav-bar {
+  margin-bottom: 0rem;
+  color: white;
+  background-color: #bb0a01;
+}
+
+.register-btn-nav-bar:hover {
+  color: #bb0a01;
+  background-color: white;
+}
+
 .register-btn {
   margin-bottom: 1rem;
   color: white;
@@ -1004,7 +1015,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  
+
   /* Same as in mobile */
   .course-img {
     max-width: 100%;
@@ -1021,8 +1032,9 @@ footer {
     margin: 1.5rem 1rem;
   }
 
-  .about-us-img > img, .about-us-img > source {
-    max-width:90%;
+  .about-us-img > img,
+  .about-us-img > source {
+    max-width: 90%;
   }
 
   /* Enlarge the students' links */
@@ -1031,10 +1043,8 @@ footer {
   }
 }
 
-
 /* Mobile */
 @media screen and (max-width: 756px) {
-
   footer {
     padding: 5rem;
   }
@@ -1087,7 +1097,6 @@ footer {
     margin: 40px auto;
   }
 
-
   .sm-m-y-1 {
     margin: 1rem 0;
   }
@@ -1131,7 +1140,8 @@ footer {
   }
 
   /* About page styling */
-  .flex-who-we-are, .flex-our-vision {
+  .flex-who-we-are,
+  .flex-our-vision {
     flex-wrap: wrap;
   }
 
@@ -1144,7 +1154,55 @@ footer {
     margin: 1.5rem 1rem;
   }
 
-  .about-us-img > img, .about-us-img > source {
+  .about-us-img > img,
+  .about-us-img > source {
     max-width: 100%;
   }
+}
+
+/* Register Form */
+#register {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 100px auto 100px auto;
+  max-width: 70vh;
+  height: 260vh;
+  padding: 50px 200px 50px 200px;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+}
+
+.font-register {
+  color: var(--red);
+  font-size: 30px;
+}
+
+.font-fill {
+  color: var(--black);
+  text-align: center;
+  font-weight: bold;
+}
+
+.fill-boxes {
+  margin-bottom: 25px;
+}
+
+.fill-boxes button {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 13px;
+  font-size: 14px;
+  border: none;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.options {
+  margin-top: -15px;
 }
