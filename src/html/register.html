@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOOC</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+
+    <!-- Link CSS document -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- MENU BAR -->
+    <header>
+      <nav>
+        <div>
+          <div>
+            <ul class="flex-nav-list">
+              <li class="nav-item">
+                <a href="index.html"> <img class="logo" src="../images/logo.png" alt="MOOC Logo" /></a>
+                <h2 class="text-red" style="float: right">MOOC Website</h2>
+              </li>
+
+              <li class="nav-item">
+                <a class="menu-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="menu-link" href="subjects.html">Subjects</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="menu-link" href="about_us.html">About us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="menu-link" href="contact.html">Contact</a>
+              </li>
+
+              <li class="nav-item">
+                <button class="log-btn btn-preferences" type="submit">Login</button>
+                <button onclick="window.location.href='register.html'" class="register-btn-nav-bar btn-preferences" type="submit">
+                  Register
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <body>
+      <section>
+        <div id="register">
+          <h2 class="font-register">Register</h2>
+          <p class="font-fill">Please fill out the form below to register</p>
+          <form id="register-form" name="register-form" method="post" action="register-form-process.php " autocomplete="on">
+            <!--In some browsers you may need to activate an autocomplete   function for this to work (Look under "Preferences" in the browser's menu).-->
+
+            <!--First Name-->
+            <div class="fill-boxes">
+              <label class="font-fill" for="first_name">First Name</label><br />
+              <input type="text" id="first_name" name="first_name" placeholder="Ted" />
+            </div>
+
+            <!--Last Name-->
+            <div class="fill-boxes">
+              <label class="font-fill" for="last_name">First Name</label><br />
+              <input type="text" id="last_name" name="last_name" placeholder="Skywalker" />
+            </div>
+
+            <!-- Email -->
+            <div class="fill-boxes">
+              <label class="font-fill" for="email">Email</label><br />
+              <input type="email" name="email" id="email" placeholder="Enter your email" />
+            </div>
+
+            <!-- Age -->
+            <div class="fill-boxes">
+              <label class="font-fill" for="age">Age</label><br />
+              <input type="number" name="age" id="age" value="20" />
+            </div>
+
+            <!-- Date -->
+            <div class="fill-boxes">
+              <label class="font-fill" for="birthdate">Birthdate</label><br />
+              <input type="date" name="birthdate" id="birthdate" />
+            </div>
+
+            <!--Card Number-->
+            <div class="fill-boxes">
+              <label class="font-fill" for="card_number">Card Number</label><br />
+              <input type="text" id="card_number" name="card_number" placeholder="35xx-xxxx-xxxx-xxxx" />
+            </div>
+
+            <!--Billing Address-->
+            <div class="fill-boxes">
+              <label class="font-fill" for="billing_address">Billing Address</label><br />
+              <input type="text" id="billing_address" name="billing_address" placeholder="Patission Street 50" />
+            </div>
+
+            <!--Password-->
+            <div class="fill-boxes">
+              <label class="font-fill" for="password">Password</label><br />
+              <input type="password" id="password" name="password" placeholder="8-16 digits/letters" />
+            </div>
+
+            <!--Password Check-->
+            <div class="fill-boxes">
+              <label class="font-fill" for="password_check">Password Check</label><br />
+              <input type="password" id="password_check" name="password_check" placeholder="**********" />
+            </div>
+
+            <!-- Education -->
+            <div class="fill-boxes flex-column">
+              <label class="font-fill" for="education">Education</label>
+              <input type="radio" name="education" value="High School" id="education" checked /><span class="options">
+                High School</span
+              >
+              <input type="radio" name="education" value="Bachelor" /> <span class="options"> Bachelor</span>
+              <input type="radio" name="education" value="Master" /> <span class="options"> Master</span>
+              <input type="radio" name="education" value="PHD" /><span class="options"> PHD</span>
+              <input type="radio" name="education" value="Other" /> <span class="options"> Other</span>
+            </div>
+
+            <!-- Graduation Year -->
+            <div class="fill-boxes">
+              <label class="font-fill" for="graduation">Graduation Year</label><br />
+              <input type="date" name="graduation" id="graduation" />
+            </div>
+
+            <!-- Field of study -->
+            <div class="fill-boxes flex-column">
+              <label class="font-fill" for="likes">Field Of Study</label>
+              <input class="font-input" type="checkbox" name="field" value="Math" /> <span class="options"> Math</span>
+              <input type="checkbox" name="field" value="Physics" /> <span class="options"> Physics</span>
+              <input type="checkbox" name="likes" value="Computer Science" /> <span class="options"> Computer Science</span>
+              <input type="checkbox" name="likes" value="Business" /> <span class="options"> Business</span>
+            </div>
+
+            <!--Favorite Math Subject-->
+            <div class="fill-boxes flex-column">
+              <label class="font-fill" for="likes">Favorite Math Subject</label>
+              <input class="font-input" type="checkbox" name="field" value="Math" /> <span class="options">Math & Logic</span>
+              <input type="checkbox" name="field" value="Physics" /> <span class="options"> Calculus</span>
+              <input type="checkbox" name="likes" value="Computer Science" /> <span class="options"> Linear Algebra</span>
+              <input type="checkbox" name="likes" value="Business" /> <span class="options"> Discrete Mathematics</span>
+            </div>
+
+            <!--Favorite Physics Subject-->
+            <div class="fill-boxes flex-column">
+              <label class="font-fill" for="likes">Favorite Physics Subject</label>
+              <input class="font-input" type="checkbox" name="field" value="Math" /> <span class="options">Mechanics</span>
+              <input type="checkbox" name="field" value="Physics" /> <span class="options"> Electromagnetism</span>
+              <input type="checkbox" name="likes" value="Computer Science" /> <span class="options">Astronomy</span>
+              <input type="checkbox" name="likes" value="Business" /> <span class="options"> Theory of Relativity</span>
+            </div>
+
+            <!--Favorite Computer Science Subject-->
+            <div class="fill-boxes flex-column">
+              <label class="font-fill" for="likes">Favorite Computer Science Subject</label>
+              <input class="font-input" type="checkbox" name="field" value="Math" /> <span class="options">Web Development</span>
+              <input type="checkbox" name="field" value="Physics" /> <span class="options">Artificial Intelligence</span>
+              <input type="checkbox" name="likes" value="Computer Science" /> <span class="options">Cybersecurity</span>
+              <input type="checkbox" name="likes" value="Business" /> <span class="options">Game Development</span>
+            </div>
+
+            <!-- Change  -->
+            <div class="fill-boxes flex-column">
+              <label class="font-fill" for="education">Given a chance, what is one change that you would like to see?</label>
+              <input type="radio" name="education" value="High School" id="education" checked /><span class="options">
+                Teaching method</span
+              >
+              <input type="radio" name="education" value="Bachelor" />
+              <span class="options"> Time taken to complete a chapter</span>
+              <input type="radio" name="education" value="Master" /> <span class="options"> Extracurricular activities</span>
+              <input type="radio" name="education" value="Other" /> <span class="options"> Other</span>
+            </div>
+
+            <!-- Classmates  -->
+            <div class="fill-boxes flex-column">
+              <label class="font-fill" for="education">Do you have supportive classmates?</label>
+              <input type="radio" name="education" value="High School" checked /><span class="options"
+                >Yes, extremely supportive</span
+              >
+              <input type="radio" name="education" value="Bachelor" />
+              <span class="options">Neither supportive nor unsupportive</span>
+              <input type="radio" name="education" value="Master" /> <span class="options">Extremely unsupportive</span>
+              <input type="radio" name="education" value="Other" /> <span class="options"> Other</span>
+            </div>
+
+            <!--Motivation-->
+            <div class="fill-boxes flex-column">
+              <label class="font-fill" for="likes">What motivates you to learn more</label>
+              <input class="font-input" type="checkbox" name="field" value="Math" />
+              <span class="options">Asking questions to the teacher</span>
+              <input type="checkbox" name="field" value="Physics" /> <span class="options">Completing various assignments</span>
+              <input type="checkbox" name="likes" value="Computer Science" />
+              <span class="options">Sports and other extracurricular activities</span>
+              <input type="checkbox" name="likes" value="Business" /> <span class="options">Other</span>
+            </div>
+
+            <!-- Homework  -->
+            <div class="fill-boxes flex-column">
+              <label class="font-fill" for="education">How much time do you spend every day on homework?</label>
+              <input type="radio" name="education" value="High School" checked /><span class="options">less than 2 Hours</span>
+              <input type="radio" name="education" value="Bachelor" /><span class="options">2-3 Hours</span>
+              <input type="radio" name="education" value="Master" /> <span class="options">3-4 Hours</span>
+              <input type="radio" name="education" value="Other" /> <span class="options">More than 4 Hours</span>
+            </div>
+
+            <div class="fill-boxes">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </body>
+  </body>
+</html>
