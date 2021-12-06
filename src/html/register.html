@@ -13,6 +13,10 @@
 
     <!-- Link CSS document -->
     <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Link JavaScript for field validation -->
+    <script src="../javascript/validation.js"></script>
+
   </head>
   <body>
     <!-- MENU BAR -->
@@ -56,7 +60,7 @@
 
     <!-- Registration form -->
     <main>
-      <form id="registration-form" action="/register.html">
+      <form id="registration-form">
         <fieldset>
           <legend>Register</legend>
 
@@ -71,31 +75,35 @@
           <!-- First name -->
           <div class="register-item">
             <label for="first_name">First name<span class="text-red">*</span></label>
-            <input type="text" name="first_name" id="first_name" placeholder="Anakin" autocomplete="on">
+            <input type="text" name="first_name" id="first_name" placeholder="Anakin" autocomplete="on" required>
           </div>
 
           <!-- Last name -->
           <div class="register-item">
             <label for="last_name">Last name<span class="text-red">*</span></label>
-            <input type="text" name="last_name" id="last_name" placeholder="Skywalker" autocomplete="on">
+            <input type="text" name="last_name" id="last_name" placeholder="Skywalker" autocomplete="on" required>
           </div>
 
           <!-- Email address -->
           <div class="register-item">
             <label for="email">Email address<span class="text-red">*</span></label>
-            <input type="email" name="email" id="email" autocomplete="on">
+            <input type="email" name="email" id="email" autocomplete="on" required>
           </div>
 
           <!-- Age -->
           <div class="register-item">
             <label for="age">Age<span class="text-red">*</span></label>
-            <input type="number" name="age" id="age">
+            <input type="number" name="age" id="age" required>
+          </div>
+
+          <div id="register-error-age">
+
           </div>
 
           <!-- Country -->
           <div class="register-item">
             <label for="country">Country of origin<span class="text-red">*</span></label>
-            <select name="country" id="country">
+            <select name="country" id="country" required>
               <!-- List of ALL countries -->
               <option value="Afghanistan">Afghanistan</option>
               <option value="Albania">Albania</option>
@@ -340,25 +348,33 @@
           <!--Card number-->
           <div class="register-item">
             <label for="card_number">Card number<span class="text-red">*</span></label>
-            <input type="text" id="card_number" name="card_number" placeholder="35xx-xxxx-xxxx-xxxx">
+            <input type="text" id="card_number" name="card_number" placeholder="35xx-xxxx-xxxx-xxxx"
+                  pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}">
           </div>
 
           <!-- Billing address -->
           <div class="register-item">
             <label for="billing_address">Billing address<span class="text-red">*</span></label>
-            <input type="text" id="billing_address" name="billing_address">
+            <input type="text" id="billing_address" name="billing_address" required>
           </div>
 
           <!-- Password -->
           <div class="register-item">
             <label for="password">Password<span class="text-red">*</span></label>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" name="password" pattern="[a-zA-Z][a-zA-Z0-9-_.\!]{8,20}">
+            <p class="text-light-gray font-size-tiny">
+              *Must contain at least one number and one letter, and at least 8 or more characters.
+            </p>
           </div>
 
           <!-- Password confirmation -->
           <div class="register-item">
             <label for="password_confirm">Password confirmation<span class="text-red">*</span></label>
-            <input type="password" id="password_confirm" name="password_confirm">
+            <input type="password" id="password_confirm" name="password_confirm" pattern="[a-zA-Z][a-zA-Z0-9-_.\!]{8,20}">
+          </div>
+
+          <div id="register-error-password">
+          
           </div>
 
           <hr id="questionnaire-line">

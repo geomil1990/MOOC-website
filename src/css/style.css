@@ -110,6 +110,11 @@ body {
   font-style: italic;
 }
 
+/* Font size classes */
+.font-size-tiny {
+  font-size: 10px;
+}
+
 /*Navigation bar*/
 
 /* Navigation colour links */
