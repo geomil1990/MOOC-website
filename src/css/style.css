@@ -585,10 +585,20 @@ iframe {
 }
 
 /* Responsive */
+@media screen and (max-width: 1350px) {
+  .flex-contact section:nth-child(1) {
+    margin-bottom: 10%;
+  }
+}
 @media screen and (max-width: 950px) {
+  .flex-contact section:nth-child(1) {
+    margin-bottom: 10%;
+  }
+
   iframe {
     width: 450px;
     height: 350px;
+    margin-left: -10%;
   }
 }
 
@@ -1058,7 +1068,8 @@ footer {
 }
 
 /* Trim the edges of the input tags and enlarge them */
-#registration-form .register-item input, #registration-form .register-item select {
+#registration-form .register-item input,
+#registration-form .register-item select {
   width: 100%;
   margin: 0.5rem 0;
   padding: 0.5rem;
