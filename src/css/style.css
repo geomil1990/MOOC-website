@@ -110,6 +110,11 @@ body {
   font-style: italic;
 }
 
+/* Font size classes */
+.font-size-tiny {
+  font-size: 10px;
+}
+
 /*Navigation bar*/
 
 /* Navigation colour links */
@@ -601,6 +606,11 @@ iframe {
   flex-direction: row;
 }
 
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -1008,6 +1018,98 @@ footer {
   font-weight: 400;
 }
 
+/* Registration form in register.html */
+#registration-form {
+  margin: 2rem 25rem;
+}
+
+#registration-form fieldset {
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+#registration-form legend {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--red);
+}
+
+#registration-form details {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background-color: var(--very-light-gray);
+  border-radius: 5px;
+}
+
+#registration-form details > summary {
+  color: var(--dark-red);
+  cursor: pointer;
+}
+
+/* Have the inputs below their labels */
+#registration-form .register-item {
+  display: flex;
+  flex-direction: column;
+}
+
+#registration-form .register-item label {
+  margin-top: 3px;
+  font-weight: bold;
+}
+
+/* Trim the edges of the input tags and enlarge them */
+#registration-form .register-item input, #registration-form .register-item select {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 3px;
+}
+
+#registration-form .register-item select {
+  background-color: var(--light-pink);
+}
+
+/* Styles for checkboxes and radio buttons */
+#registration-form .register-item-entry {
+  margin: 0.25rem 0;
+}
+
+#registration-form .register-item-entry label {
+  font-size: 15px;
+}
+
+/* Margin-top 1 rem */
+.mt-1 {
+  margin-top: 1rem;
+}
+
+/* Questionnaire inside the registration form */
+#questionnaire-line {
+  margin: 2rem 0;
+  border-top: 1px solid var(--red);
+}
+
+#questionnaire-title {
+  display: inline;
+}
+
+#register-submit-btn {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+  color: var(--red);
+  font-size: 22px;
+  border: 1px solid var(--red);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#register-submit-btn:hover {
+  background-color: var(--red);
+  color: var(--white);
+}
+
 /* Tablet */
 @media screen and (max-width: 1056px) {
   /* Same as in mobile */
@@ -1040,6 +1142,10 @@ footer {
   /* Enlarge the students' links */
   .students {
     max-width: 95%;
+  }
+
+  #registration-form {
+    margin: 2rem 10rem;
   }
 }
 
@@ -1157,6 +1263,10 @@ footer {
   .about-us-img > img,
   .about-us-img > source {
     max-width: 100%;
+  }
+
+  #registration-form {
+    margin: 2rem 1rem;
   }
 }
 
