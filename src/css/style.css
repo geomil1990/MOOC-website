@@ -280,7 +280,7 @@ nav li a {
   background: var(--white);
   margin-left: 2em;
   margin-right: 2em;
-  margin: 0px 2em 0px 2em;
+  margin: 1.5em 2em 0em 2em;
   /*justify-content: flex-end;
   align-items: center;*/
   background-color: whitesmoke;
@@ -301,6 +301,10 @@ nav li a {
   margin-left: 10%;
   max-width: 60%;
   /* background-color: #0b0eaccb; */
+}
+
+#brain > img {
+  max-width: 100%;
 }
 
 /* Responsive */
@@ -569,7 +573,7 @@ nav li a {
   margin-right: 10%;
 }
 
-.form-input-contact{
+.form-input-contact {
   width: 100%;
   margin: 0.5rem 0;
   padding: 0.5rem;
