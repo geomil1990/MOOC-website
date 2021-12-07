@@ -15,10 +15,19 @@
     // Redirect to the homepage
     window.location.href.replace('http://127.0.0.1:5501/src/html/index.html')
 }*/
-function checkforAge() {
+function validationForm() {
   if (document.getElementById("age").value < 18) {
-    alert("You should be over 18 to register");
+    alert("Fill in the form correctly");
+    document.getElementById("check-age").innerHTML = "Your age should be over 17";
     document.getElementById("age").style.borderColor = "red";
+    return false;
+  }
+
+  let first_name = document.getElementById("first_name").value;
+  if (first_name == "" || !isNaN(first_name)) {
+    alert("Fill in the form correctly");
+    document.getElementById("check-first-name").innerHTML = "Enter your Name using latin characters";
+    document.getElementById("first_name").style.borderColor = "red";
     return false;
   }
 }

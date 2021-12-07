@@ -1297,3 +1297,18 @@ footer {
     margin: 2rem 1rem;
   }
 }
+
+/* Validation Form output errors*/
+#check-first-name {
+  margin: 0px;
+  color: red;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+#check-age {
+  margin: 0px;
+  color: red;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}

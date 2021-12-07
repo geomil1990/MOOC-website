@@ -59,7 +59,7 @@
 
     <!-- Registration form -->
     <main>
-      <form id="registration-form" onsubmit="return checkforAge()">
+      <form id="registration-form" onsubmit="return validationForm()">
         <fieldset>
           <legend>Register</legend>
 
@@ -72,7 +72,8 @@
           <!-- First name -->
           <div class="register-item">
             <label for="first_name">First name<span class="text-red">*</span></label>
-            <input type="text" name="first_name" id="first_name" placeholder="Anakin" autocomplete="on" required />
+            <input type="text" name="first_name" id="first_name" placeholder="Anakin" autocomplete="on" />
+            <p id="check-first-name"></p>
           </div>
 
           <!-- Last name -->
@@ -91,6 +92,7 @@
           <div class="register-item">
             <label for="age">Age<span class="text-red">*</span></label>
             <input type="number" name="age" id="age" required />
+            <p id="check-age"></p>
           </div>
 
           <div id="register-error-age"></div>
