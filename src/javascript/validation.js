@@ -18,15 +18,36 @@
 function validationForm() {
   let first_name = document.getElementById("first_name").value;
   if (first_name == "" || !isNaN(first_name)) {
-    alert("Fill in the form correctly");
     document.getElementById("check-first-name").innerHTML = "Enter your Name using latin characters";
     document.getElementById("first_name").style.borderColor = "red";
+    document.getElementById("first_name").scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center",
+    });
     return false;
   }
   if (document.getElementById("age").value < 18) {
-    alert("Fill in the form correctly");
     document.getElementById("check-age").innerHTML = "Your age should be over 17";
     document.getElementById("age").style.borderColor = "red";
+    document.getElementById("age").scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center",
+    });
+    return false;
+  }
+
+  /* Password Match */
+  if (document.getElementById("password").value != document.getElementById("password_confirm").value) {
+    document.getElementById("password").style.borderColor = "red";
+    document.getElementById("password_confirm").style.borderColor = "red";
+    document.getElementById("check_password_confirm").innerHTML = "Your password does not match!";
+    document.getElementById("password").scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center",
+    });
     return false;
   }
 }
