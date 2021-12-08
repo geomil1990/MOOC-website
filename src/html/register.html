@@ -364,9 +364,7 @@
           <div class="register-item">
             <label for="password">Password<span class="text-red">*</span></label>
             <input type="password" id="password" name="password" pattern="[a-zA-Z][a-zA-Z0-9-_.\!]{8,20}" />
-            <p class="text-light-gray font-size-tiny">
-              *Must contain at least one number and one letter, and at least 8 or more characters.
-            </p>
+            <p class="text-light-gray font-size-tiny">*May contain numbers , letters and symbols from 8 to 20 characters.</p>
           </div>
 
           <!-- Password confirmation -->
@@ -509,7 +507,7 @@
           <div class="flex-col">
             <p class="font-bold">Did you like our website?</p>
             <div class="flex-row-reverse flex-content-between register-item-entry">
-              <input type="range" name="satisfied" id="satisfied" value="3" min="0" max="5" />
+              <input type="range" name="like" id="like" value="3" min="0" max="5" />
               <label for="range">Rate from 0 to 5:</label>
             </div>
           </div>

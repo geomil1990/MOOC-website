@@ -16,6 +16,7 @@
     window.location.href.replace('http://127.0.0.1:5501/src/html/index.html')
 }*/
 function validationForm() {
+  /* First Name */
   let first_name = document.getElementById("first_name").value;
   if (first_name == "" || !isNaN(first_name)) {
     document.getElementById("check-first-name").innerHTML = "Enter your Name using latin characters";
@@ -26,7 +27,12 @@ function validationForm() {
       inline: "center",
     });
     return false;
+  } else {
+    document.getElementById("first_name").style.borderColor = "#929fa6";
+    document.getElementById("check-first-name").innerHTML = "";
   }
+
+  /* Check Age */
   if (document.getElementById("age").value < 18) {
     document.getElementById("check-age").innerHTML = "Your age should be over 17";
     document.getElementById("age").style.borderColor = "red";
@@ -36,6 +42,9 @@ function validationForm() {
       inline: "center",
     });
     return false;
+  } else {
+    document.getElementById("age").style.borderColor = "#929fa6";
+    document.getElementById("check-age").innerHTML = "";
   }
 
   /* Password Match */
@@ -49,5 +58,9 @@ function validationForm() {
       inline: "center",
     });
     return false;
+  } else {
+    document.getElementById("password").style.borderColor = "#929fa6";
+    document.getElementById("password_confirm").style.borderColor = "#929fa6";
+    document.getElementById("check_password_confirm").innerHTML = "";
   }
 }
