@@ -280,7 +280,7 @@ nav li a {
   background: var(--white);
   margin-left: 2em;
   margin-right: 2em;
-  margin: 0px 2em 0px 2em;
+  margin: 1.5em 2em 0em 2em;
   /*justify-content: flex-end;
   align-items: center;*/
   background-color: whitesmoke;
@@ -301,6 +301,10 @@ nav li a {
   margin-left: 10%;
   max-width: 60%;
   /* background-color: #0b0eaccb; */
+}
+
+#brain > img {
+  max-width: 100%;
 }
 
 /* Responsive */
@@ -569,11 +573,20 @@ nav li a {
   margin-right: 10%;
 }
 
+.form-input-contact {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 3px;
+}
+
 /* Map */
 iframe {
   width: 800px;
   height: 650px;
   border: 0;
+  margin-top: 10%;
 }
 
 /* Font for the contact form */
@@ -585,10 +598,20 @@ iframe {
 }
 
 /* Responsive */
+@media screen and (max-width: 1350px) {
+  .flex-contact section:nth-child(1) {
+    margin-bottom: 10%;
+  }
+}
 @media screen and (max-width: 950px) {
+  .flex-contact section:nth-child(1) {
+    margin-bottom: 10%;
+  }
+
   iframe {
     width: 450px;
     height: 350px;
+    margin-left: -10%;
   }
 }
 
@@ -1058,7 +1081,8 @@ footer {
 }
 
 /* Trim the edges of the input tags and enlarge them */
-#registration-form .register-item input, #registration-form .register-item select {
+#registration-form .register-item input,
+#registration-form .register-item select {
   width: 100%;
   margin: 0.5rem 0;
   padding: 0.5rem;
@@ -1082,6 +1106,10 @@ footer {
 /* Margin-top 1 rem */
 .mt-1 {
   margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-bottom: 1rem;
 }
 
 /* Questionnaire inside the registration form */
@@ -1270,49 +1298,24 @@ footer {
   }
 }
 
-/* Register Form */
-#register {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 100px auto 100px auto;
-  max-width: 70vh;
-  height: 260vh;
-  padding: 50px 200px 50px 200px;
-  background-color: var(--light-gray);
-  border-radius: 8px;
+/* Validation Form output errors*/
+#check-first-name {
+  margin: 0px;
+  color: red;
+  font-size: 0.8em;
+  margin-bottom: 1em;
 }
 
-.font-register {
-  color: var(--red);
-  font-size: 30px;
+#check-age {
+  margin: 0px;
+  color: red;
+  font-size: 0.8em;
+  margin-bottom: 1em;
 }
 
-.font-fill {
-  color: var(--black);
-  text-align: center;
-  font-weight: bold;
-}
-
-.fill-boxes {
-  margin-bottom: 25px;
-}
-
-.fill-boxes button {
-  background-color: var(--red);
-  color: var(--white);
-  padding: 13px;
-  font-size: 14px;
-  border: none;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.options {
-  margin-top: -15px;
+#check_password_confirm {
+  margin: 0px;
+  color: red;
+  font-size: 0.8em;
+  margin-bottom: 1em;
 }

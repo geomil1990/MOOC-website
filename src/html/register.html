@@ -16,7 +16,6 @@
 
     <!-- Link JavaScript for field validation -->
     <script src="../javascript/validation.js"></script>
-
   </head>
   <body>
     <!-- MENU BAR -->
@@ -60,45 +59,43 @@
 
     <!-- Registration form -->
     <main>
-      <form id="registration-form">
+      <form id="registration-form" onsubmit="return validationForm()">
         <fieldset>
           <legend>Register</legend>
 
           <!-- Details for explaining the use of askerisks -->
           <details>
             <summary>Asterisks</summary>
-            <p>
-              An <span class="text-red">askerisk</span> indicates a required field.
-            </p>
+            <p>An <span class="text-red">askerisk</span> indicates a required field.</p>
           </details>
 
           <!-- First name -->
           <div class="register-item">
             <label for="first_name">First name<span class="text-red">*</span></label>
-            <input type="text" name="first_name" id="first_name" placeholder="Anakin" autocomplete="on" required>
+            <input type="text" name="first_name" id="first_name" placeholder="Anakin" autocomplete="on" />
+            <p id="check-first-name"></p>
           </div>
 
           <!-- Last name -->
           <div class="register-item">
             <label for="last_name">Last name<span class="text-red">*</span></label>
-            <input type="text" name="last_name" id="last_name" placeholder="Skywalker" autocomplete="on" required>
+            <input type="text" name="last_name" id="last_name" placeholder="Skywalker" autocomplete="on" required />
           </div>
 
           <!-- Email address -->
           <div class="register-item">
             <label for="email">Email address<span class="text-red">*</span></label>
-            <input type="email" name="email" id="email" autocomplete="on" required>
+            <input type="email" name="email" id="email" autocomplete="on" required />
           </div>
 
           <!-- Age -->
           <div class="register-item">
             <label for="age">Age<span class="text-red">*</span></label>
-            <input type="number" name="age" id="age" required>
+            <input type="number" name="age" id="age" required />
+            <p id="check-age"></p>
           </div>
 
-          <div id="register-error-age">
-
-          </div>
+          <div id="register-error-age"></div>
 
           <!-- Country -->
           <div class="register-item">
@@ -348,119 +345,123 @@
           <!--Card number-->
           <div class="register-item">
             <label for="card_number">Card number<span class="text-red">*</span></label>
-            <input type="text" id="card_number" name="card_number" placeholder="35xx-xxxx-xxxx-xxxx"
-                  pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}">
+            <input
+              type="text"
+              id="card_number"
+              name="card_number"
+              placeholder="35xx-xxxx-xxxx-xxxx"
+              pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+            />
           </div>
 
           <!-- Billing address -->
           <div class="register-item">
             <label for="billing_address">Billing address<span class="text-red">*</span></label>
-            <input type="text" id="billing_address" name="billing_address" required>
+            <input type="text" id="billing_address" name="billing_address" required />
           </div>
 
           <!-- Password -->
           <div class="register-item">
             <label for="password">Password<span class="text-red">*</span></label>
-            <input type="password" id="password" name="password" pattern="[a-zA-Z][a-zA-Z0-9-_.\!]{8,20}">
-            <p class="text-light-gray font-size-tiny">
-              *Must contain at least one number and one letter, and at least 8 or more characters.
-            </p>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z][a-zA-Z0-9-_.\!]{8,20}" />
+            <p class="text-light-gray font-size-tiny">*May contain numbers , letters and symbols from 8 to 20 characters.</p>
           </div>
 
           <!-- Password confirmation -->
           <div class="register-item">
             <label for="password_confirm">Password confirmation<span class="text-red">*</span></label>
-            <input type="password" id="password_confirm" name="password_confirm" pattern="[a-zA-Z][a-zA-Z0-9-_.\!]{8,20}">
+            <input type="password" id="password_confirm" name="password_confirm" pattern="[a-zA-Z][a-zA-Z0-9-_.\!]{8,20}" />
+            <p id="check_password_confirm"></p>
           </div>
 
-          <div id="register-error-password">
-          
-          </div>
+          <div id="register-error-password"></div>
 
-          <hr id="questionnaire-line">
+          <hr id="questionnaire-line" />
           <h4 id="questionnaire-title">Questionnaire</h4>
-          <p class="text-light-gray">Please answer the optional questions below to better help us understand where you are coming from.</p>
+          <p class="text-light-gray">
+            Please answer the optional questions below to better help us understand where you are coming from.
+          </p>
 
           <!-- Education -->
           <div class="flex-col">
             <p class="font-bold">Education</p>
             <div class="flex-row-reverse flex-content-between register-item-entry">
-              <input type="radio" name="education-radio" id="edu-high-school" value="High School" checked>
+              <input type="radio" name="education-radio" id="edu-high-school" value="High School" checked />
               <label for="edu-high-school">High School</label>
             </div>
             <div class="flex-row-reverse flex-content-between register-item-entry">
-              <input type="radio" name="education-radio" id="edu-bachelor" value="Bachelor">
+              <input type="radio" name="education-radio" id="edu-bachelor" value="Bachelor" />
               <label for="edu-bachelor">Bachelor</label>
             </div>
             <div class="flex-row-reverse flex-content-between register-item-entry">
-              <input type="radio" name="education-radio" id="edu-master" value="Master">
+              <input type="radio" name="education-radio" id="edu-master" value="Master" />
               <label for="edu-master">Master</label>
             </div>
             <div class="flex-row-reverse flex-content-between register-item-entry">
-              <input type="radio" name="education-radio" id="edu-phd" value="PHD">
+              <input type="radio" name="education-radio" id="edu-phd" value="PHD" />
               <label for="edu-phd">PHD</label>
             </div>
             <div class="flex-row-reverse flex-content-between register-item-entry">
-              <input type="radio" name="education-radio" id="edu-other" value="Other">
+              <input type="radio" name="education-radio" id="edu-other" value="Other" />
               <label for="edu-other">Other</label>
             </div>
           </div>
 
           <!-- Graduation year -->
-          <div class=" mt-1 register-item">
+          <div class="mt-1 register-item">
             <label for="graduation_year">Graduation year</label>
-            <input type="date" name="graduation_year" id="graduation_year">
+            <input type="date" name="graduation_year" id="graduation_year" />
           </div>
 
           <!-- Field of study -->
           <div class="register-item">
             <label for="field-of-study">Field of study</label>
-            <input type="text" name="field-of-study" id="field-of-study" list="fields-of-study" autocomplete="on">
+            <input type="text" name="field-of-study" id="field-of-study" list="fields-of-study" autocomplete="on" />
 
             <datalist id="fields-of-study">
-              <option value="Math">
-              <option value="Physics">
-              <option value="Computer Science">
-              <option value="Business">
+              <option value="Math"></option>
+              <option value="Physics"></option>
+              <option value="Computer Science"></option>
+              <option value="Business"></option>
             </datalist>
           </div>
 
           <!-- Favourite math subject -->
           <div class="register-item">
             <label for="fav-math">Favourite math subject</label>
-            <input type="text" name="fav-math" id="fav-math" list="fav-maths" autocomplete="on">
+            <input type="text" name="fav-math" id="fav-math" list="fav-maths" autocomplete="on" />
 
             <datalist id="fav-maths">
-              <option value="Linear algebra">
-              <option value="Calculus">
-              <option value="Math and logic">
-              <option value="Discrete mathematics">
+              <option value="Linear algebra"></option>
+              <option value="Calculus"></option>
+              <option value="Math and logic"></option>
+              <option value="Discrete mathematics"></option>
             </datalist>
           </div>
 
           <!-- Favourite physics subject -->
           <div class="register-item">
             <label for="fav-physics">Favourite physics subject</label>
-            <input type="text" name="fav-physics" id="fav-physics" list="fav-physics-subjects" autocomplete="on">
+            <input type="text" name="fav-physics" id="fav-physics" list="fav-physics-subjects" autocomplete="on" />
 
             <datalist id="fav-physics-subjects">
-              <option value="Mechanics">
-              <option value="Electromagnetism">
-              <option value="Astronomy">
-              <option value="Theory of relativity">
+              <option value="Mechanics"></option>
+              <option value="Electromagnetism"></option>
+              <option value="Astronomy"></option>
+              <option value="Theory of relativity"></option>
             </datalist>
           </div>
 
           <!-- Favourite computer science subject -->
           <div class="register-item">
             <label for="fav-computer">Favourite computer science subject</label>
-            <input type="text" name="fav-computer" id="fav-computer" list="fav-computers" autocomplete="on">
-          
+            <input type="text" name="fav-computer" id="fav-computer" list="fav-computers" autocomplete="on" />
+
             <datalist id="fav-computers">
-              <option value="Web development">
-              <option value="Cybersecurity">
-              <option value="Artificial intelligence">
-              <option value="Game development">
+              <option value="Web development"></option>
+              <option value="Cybersecurity"></option>
+              <option value="Artificial intelligence"></option>
+              <option value="Game development"></option>
             </datalist>
           </div>
 
@@ -468,15 +469,15 @@
           <div class="flex-col">
             <p class="font-bold">What motivates you to learn more?</p>
             <div class="flex-row-reverse flex-content-between register-item-entry">
-              <input type="checkbox" name="assignments" id="assignments" value="completing assignments">
+              <input type="checkbox" name="assignments" id="assignments" value="completing assignments" />
               <label for="assignments">Completing various assignments</label>
             </div>
             <div class="flex-row-reverse flex-content-between register-item-entry">
-              <input type="checkbox" name="extracurricular" id="extracurricular" value="extracurricular activities">
+              <input type="checkbox" name="extracurricular" id="extracurricular" value="extracurricular activities" />
               <label for="extracurricular">Sports and other extracurricular activities</label>
             </div>
             <div class="flex-row-reverse flex-content-between register-item-entry">
-              <input type="checkbox" name="motivation-other" id="motivation-other">
+              <input type="checkbox" name="motivation-other" id="motivation-other" />
               <label for="motivation-other">Other</label>
             </div>
           </div>
@@ -485,28 +486,44 @@
           <div class="flex-col">
             <p class="font-bold">How much time do you spend every day on homework?</p>
             <div class="flex-row-reverse flex-content-between register-item-entry">
-              <input type="radio" name="hours-homework" id="less-than-two" value="less than 2 hours" checked>
+              <input type="radio" name="hours-homework" id="less-than-two" value="less than 2 hours" checked />
               <label for="less-than-two">less than 2 Hours</label>
             </div>
             <div class="flex-row-reverse flex-content-between register-item-entry">
-              <input type="radio" name="hours-homework" id="two-or-three" value="2-3 hours">
+              <input type="radio" name="hours-homework" id="two-or-three" value="2-3 hours" />
               <label for="two-or-three">2-3 Hours</label>
             </div>
             <div class="flex-row-reverse flex-content-between register-item-entry">
-              <input type="radio" name="hours-homework" id="three-or-four" value="3-4 hours">
-              <label for="three-or-four">3-4 Hours</span>
+              <input type="radio" name="hours-homework" id="three-or-four" value="3-4 hours" />
+              <label for="three-or-four">3-4 Hours</label>
             </div>
             <div class="flex-row-reverse flex-content-between register-item-entry">
-              <input type="radio" name="hours-homework" id="more-than-four" value="more than 4 hours">
+              <input type="radio" name="hours-homework" id="more-than-four" value="more than 4 hours" />
               <label for="more-than-four">More than 4 Hours</label>
             </div>
           </div>
 
+          <!-- Did you liked our Website? -->
+          <div class="flex-col">
+            <p class="font-bold">Did you like our website?</p>
+            <div class="flex-row-reverse flex-content-between register-item-entry">
+              <input type="range" name="like" id="like" value="3" min="0" max="5" />
+              <label for="range">Rate from 0 to 5:</label>
+            </div>
+          </div>
+
+          <!-- Are you satisfied from our services? -->
+          <div class="flex-col">
+            <p class="font-bold">Are you satisfied from our services?</p>
+            <div class="flex-row-reverse flex-content-between register-item-entry">
+              <input type="range" name="satisfied" id="satisfied" value="3" min="0" max="5" />
+              <label for="range">Rate from 0 to 5:</label>
+            </div>
+          </div>
         </fieldset>
 
         <!-- Submit button -->
         <button id="register-submit-btn" type="submit" form="registration-form" value="Submit">Submit</button>
-
       </form>
     </main>
 
@@ -514,7 +531,7 @@
     <footer>
       <div id="footer-top-row">
         <img id="company-logo" src="../images/logo.png" alt="logo" />
-    
+
         <div class="flex-col sm-items-center">
           <h4><b>Top Courses</b></h4>
           <a href="linear_algebra.html" class="text-black footer-link">Linear Algebra</a>
@@ -532,9 +549,9 @@
           <a href="#" class="btn log-btn">Log out</a>
         </div>
       </div>
-    
+
       <hr id="footer-hr" />
-    
+
       <div class="flex-row flex-wrap flex-content-between sm-m-y-1 sm-flex-content-center">
         <span>&copy; Photo, Inc. 2019. We love our users!</span>
         <div class="flex-row items-center sm-m-y-1">
@@ -546,6 +563,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
